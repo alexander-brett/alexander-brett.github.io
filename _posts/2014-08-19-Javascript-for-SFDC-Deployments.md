@@ -136,7 +136,7 @@ and glancing through those classes to find appropriate getters and setters, we c
 ~~~
 Now it's clear how we can improve and extend this functionality: next, let's imagine that we might want to deploy to any of arbitrarily many environments (for instance, you're a sysadmin with dev, QA, and production instances). We want to be able to call `ant deploy -De=<env>`. Let's rewrite our build.properties file...
 
-~~~
+~~~config
 dev.username  = user@example.com.dev
 dev.password  = passwordToken
 dev.serverurl = https://test.salesforce.com

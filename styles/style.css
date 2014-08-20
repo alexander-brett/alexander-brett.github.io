@@ -94,7 +94,7 @@ header {
       overflow: hidden; }
 
 #content {
-  opacity: 0;
+  opacity: 1;
   text-align: left;
   overflow: scroll;
   height: 75%;

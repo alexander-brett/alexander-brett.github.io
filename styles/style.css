@@ -18,10 +18,6 @@
     .dark a:hover, .dark a.current-menu-item {
       color: #fbfbfb; }
 
-* {
-  margin: 0;
-  padding: 0; }
-
 html {
   height: 100%;
   overflow: hidden; }
@@ -40,15 +36,14 @@ h1 {
   text-transform: uppercase;
   font-family: RalewayThin;
   font-weight: 100;
-  letter-spacing: 10px;
-  font-size: 55px;
-  margin: 30px; }
+  letter-spacing: 5px;
+  font-size: 40px;
+}
 
 h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 29px;
-  margin: 30px;
   font-weight: normal; }
 
 h3 {
@@ -66,8 +61,11 @@ a {
     font-weight: normal; }
 
 p {
-  text-indent: 0.5em;
   padding-bottom: 0.5em; }
+
+::-webkit-scrollbar { 
+    display: none; 
+}
 
 header {
   position: relative;
@@ -77,6 +75,13 @@ header {
   -webkit-transition-property: top, bottom;
   -webkit-transition-duration: 0.5s;
   animation: top 0.5s; }
+  header h1 {
+  text-transform: uppercase;
+  font-family: RalewayThin;
+  font-weight: 100;
+  letter-spacing: 10px;
+  font-size: 55px;
+  margin: 30px; }
   header a {
     display: inline-block;
     margin: 0 auto 0 auto;
@@ -98,7 +103,8 @@ header {
   text-align: left;
   overflow: scroll;
   height: 75%;
-  width: 100%; }
+  width: 95%;
+  margin: auto;}
   #content .single {
     width: 80%;
     margin: auto; }

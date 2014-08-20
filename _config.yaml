@@ -1,6 +1,4 @@
-include: ["index.html"]
-
-highlighter: rouge
+highlighter: pygments
 markdown:    redcarpet
 
 redcarpet:

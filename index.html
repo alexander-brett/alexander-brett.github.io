@@ -3,13 +3,15 @@
 <html>
   <head>
     <title>Alexander Brett</title>
+    <meta name="author" content="Alexander Brett">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    
     <link rel="stylesheet" href="styles/raleway.css"/>
     <link rel="stylesheet" href="styles/style.css"/>
     <link rel="stylesheet" href="styles/highlighting.css">
     
-    <meta name="author" content="Alexander Brett">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
   <body class="light">
     <header>
@@ -30,10 +32,17 @@
     </header>
     <div id="content">
       <div id="blog">
-        {% for post in site.posts %}
-          {{ post.content }}
-        {% endfor %}
+        <div class="blog-post">
+          {% for post in site.posts %}
+            {{ post.content }}
+          {% endfor %}
+        </div>
       </div>
     </div>
+    <script>
+      $(".blog-post").click(function(){
+        $(this).css({"max-height": "1000em"});
+      })
+    </script>
   </body>
 </html>

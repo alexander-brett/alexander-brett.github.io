@@ -118,21 +118,19 @@ and glancing through those classes to find appropriate getters and setters, we c
     </target>
     
     <scriptdef name="deployscript" language="javascript">
-        <![CDATA[
-            var task = java.lang.Class.forName("com.salesforce.ant.DeployTask").newInstance();
-            task.setTaskName("SF deploy");
-            task.setPassword(project.getProperty("sf.password"));
-            task.setUsername(project.getProperty("sf.username"));
-            task.setServerURL(project.getProperty("sf.serverurl"));
-            task.setDeployRoot("myPkg");
-            task.setProject(project);
-            task.setMaxPoll(project.getProperty("sf.maxpoll"));
-            
-            if (project.getProperty("v")) task.setCheckOnly(true);
-            if (project.getProperty("t")) task.setRunAllTests(true);
-            
-            task.execute();
-        ]]>
+      var task = java.lang.Class.forName("com.salesforce.ant.DeployTask").newInstance();
+      task.setTaskName("SF deploy");
+      task.setPassword(project.getProperty("sf.password"));
+      task.setUsername(project.getProperty("sf.username"));
+      task.setServerURL(project.getProperty("sf.serverurl"));
+      task.setDeployRoot("myPkg");
+      task.setProject(project);
+      task.setMaxPoll(project.getProperty("sf.maxpoll"));
+      
+      if (project.getProperty("v")) task.setCheckOnly(true);
+      if (project.getProperty("t")) task.setRunAllTests(true);
+      
+      task.execute();
     </scriptdef>
 </project>
 ~~~
@@ -165,33 +163,33 @@ sf.maxPoll   = 200
     </target>
     
     <scriptdef name="deployscript" language="javascript">
-        <![CDATA[
-            var env  = project.getProperty("e");
-            username = project.getProperty(env + ".username");
-            password = project.getProperty(env + ".password");
-            url      = project.getProperty(env + ".url");
-            
-            if (!(username && password && url)) {
-                fail = project.createTask("fail");
-                fail.setMessage("Either you didn't specify an environment, or the specified "
-                  + "environment didn't have the correct properties defined in build.properties.local.");
-                fail.execute();
-            }
-            
-            var task = java.lang.Class.forName("com.salesforce.ant.DeployTask").newInstance();
-            task.setTaskName("SF deploy");
-            task.setPassword(password);
-            task.setUsername(username);
-            task.setServerURL(url);
-            task.setDeployRoot("myPkg");
-            task.setProject(project);
-            task.setMaxPoll(project.getProperty("sf.maxpoll"));
-            
-            if (project.getProperty("v")) task.setCheckOnly(true);
-            if (project.getProperty("t")) task.setRunAllTests(true);
-            
-            task.execute();
-        ]]>
+      <![CDATA[
+        var env  = project.getProperty("e");
+        username = project.getProperty(env + ".username");
+        password = project.getProperty(env + ".password");
+        url      = project.getProperty(env + ".url");
+        
+        if (!(username && password && url)) {
+            fail = project.createTask("fail");
+            fail.setMessage("Either you didn't specify an environment, or the specified "
+              + "environment didn't have the correct properties defined in build.properties.local.");
+            fail.execute();
+        }
+        
+        var task = java.lang.Class.forName("com.salesforce.ant.DeployTask").newInstance();
+        task.setTaskName("SF deploy");
+        task.setPassword(password);
+        task.setUsername(username);
+        task.setServerURL(url);
+        task.setDeployRoot("myPkg");
+        task.setProject(project);
+        task.setMaxPoll(project.getProperty("sf.maxpoll"));
+        
+        if (project.getProperty("v")) task.setCheckOnly(true);
+        if (project.getProperty("t")) task.setRunAllTests(true);
+        
+        task.execute();
+      ]]>
     </scriptdef>
 </project>
 ~~~

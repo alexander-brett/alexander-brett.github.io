@@ -5,6 +5,8 @@
     <title>Alexander Brett</title>
     <link rel="stylesheet" href="styles/raleway.css"/>
     <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/highlighting.css">
+    
     <meta name="author" content="Alexander Brett">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -27,9 +29,11 @@
       </ul>
     </header>
     <div id="content">
-      {% for post in site.posts %}
-      {{ post.content }}
-      {% endfor %}
+      <div id="blog">
+        {% for post in site.posts %}
+        {{ post.content }}
+        {% endfor %}
+      </div>
     </div>
   </body>
 </html>

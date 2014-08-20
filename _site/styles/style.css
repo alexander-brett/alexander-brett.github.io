@@ -1,0 +1,127 @@
+.light {
+  color: #555555;
+  background: #fbfbfb; }
+  .light .divider {
+    border-color: #909090; }
+  .light a {
+    color: #909090; }
+    .light a:hover, .light a.current-menu-item {
+      color: #202020; }
+
+.dark {
+  color: #909090;
+  background: #202020; }
+  .dark .divider {
+    border-color: #555555; }
+  .dark a {
+    color: #555555; }
+    .dark a:hover, .dark a.current-menu-item {
+      color: #fbfbfb; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  font-family: RalewayMedium, Helvetica, Ariel, sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  height: 100%;
+  width: 100%;
+  overflow: scroll; }
+
+h1 {
+  text-transform: uppercase;
+  font-family: RalewayThin;
+  font-weight: 100;
+  letter-spacing: 10px;
+  font-size: 55px;
+  margin: 30px; }
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 29px;
+  margin: 30px;
+  font-weight: normal; }
+
+h3 {
+  font-family: RalewayBold;
+  font-weight: Normal;
+  padding: 0.5em; }
+
+a {
+  text-decoration: none;
+  position: relative;
+  z-index: 100; }
+  a .activeLink {
+    text-transform: uppercase;
+    font-family: RalewayBold;
+    font-weight: normal; }
+
+p {
+  text-indent: 0.5em;
+  padding-bottom: 0.5em; }
+
+header {
+  position: relative;
+  z-index: 11;
+  height: 25%;
+  width: 100%;
+  -webkit-transition-property: top, bottom;
+  -webkit-transition-duration: 0.5s;
+  animation: top 0.5s; }
+  header a {
+    display: inline-block;
+    margin: 0 auto 0 auto;
+    text-align: center; }
+  header ul.menu {
+    text-transform: uppercase;
+    margin: 0 auto 0 auto;
+    display: table;
+    table-layout: fixed; }
+    header ul.menu li {
+      text-align: center;
+      display: table-cell;
+      height: 1em;
+      padding: 1em;
+      overflow: hidden; }
+
+#content {
+  opacity: 0;
+  text-align: left;
+  overflow: scroll;
+  height: 75%;
+  width: 100%; }
+  #content .single {
+    width: 80%;
+    margin: auto; }
+    #content .single img {
+      width: 37%;
+      float: left; }
+
+#footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding-bottom: 10px;
+  background: transparent;
+  text-align: center;
+  max-height: 70px; }
+  #footer #licence {
+    font-size: 8px;
+    text-align: right;
+    text-transform: none;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    right: 0;
+    z-index: 99;
+    background: transparent;
+    padding-right: 2px; }

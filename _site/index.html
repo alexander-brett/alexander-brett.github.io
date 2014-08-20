@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Alexander Brett</title>
+    <link rel="stylesheet" href="styles/raleway.css"/>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <meta name="author" content="Alexander Brett">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body class="light">
+    <header>
+      <a href="http://alexander-brett.co.uk" class="home">
+        <h1>Alexander Brett</h1>
+      </a>
+      <ul id="headerMenu" class="menu">
+        <li class="menu-item">
+          <a href="#">Photo</a>
+        </li>
+        <li class="menu-item">
+          <a href="#">Blog</a>
+        </li>
+        <li class="menu-item">
+          <a href="mailto:alex@alexander-brett.co.uk">Email</a>
+        </li>
+      </ul>
+    </header>
+    <div id="content">
+       {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+      {% endfor %}
+    </div>
+  </body>
+</html>

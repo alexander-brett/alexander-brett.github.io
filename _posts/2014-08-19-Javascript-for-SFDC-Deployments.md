@@ -2,7 +2,8 @@
 ---
 #Writing Salesforce ant deployment tasks using Javascript
 
-The Force.com deployment tool is a .jar file defining some extra tasks such as sf:deploy and sf:retrieve. Examining the example build.xml file we see several calls of the form:
+The Force.com deployment tool is a .jar file defining some extra tasks such as `sf:deploy`
+and `sf:retrieve`. Examining the example build.xml file we see several calls of the form:
 
 ~~~xml
 <sf:retrieve 
@@ -21,9 +22,13 @@ The Force.com deployment tool is a .jar file defining some extra tasks such as s
     metadataType="${sf.metadataType}"
     retrieveTarget="retrieveUnpackaged"/>
 ~~~
-In a mature development team with several different sandboxes, you may end up wanting to retrieve and deploy from any of several different sandboxes, with or without the bulk API, with or without running all tests[^1]. If you tried to use ant to write logic to decide between them, you'd end up with a great many targets, each with only a slight permutation to the others.
-
-What we want to do is make these decisions using Javascript, which will make the code shorter, easier-to-read, and more flexible. We'll use JDK1.8, and specifically the Nashorn Javascript engine.
+In a mature development team with several different sandboxes, you may end up wanting to
+retrieve and deploy from any of several different sandboxes, with or without the bulk API,
+with or without running all tests[^1]. If you tried to use ant to write logic to decide
+between them, you'd end up with a great many targets, each with only a slight permutation
+to the others. What we want to do is make these decisions using Javascript, which will
+make the code shorter, easier-to-read, and more flexible. We'll use JDK1.8, and specifically
+the Nashorn Javascript engine.
 
 Let's start with the simplest possible build.xml file:
 

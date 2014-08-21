@@ -9,10 +9,12 @@
     
     <link rel="stylesheet" href="styles/raleway.css"/>
     <link rel="stylesheet" href="styles/style.css"/>
-    <link rel="stylesheet" href="styles/highlighting.css">
+    <link rel="stylesheet" href="styles/highlight-rouge.css">
+    <link rel="stylesheet" href="styles/scrollbars.css">
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
+  
   <body class="light">
     <header>
       <a href="#" class="home">
@@ -30,19 +32,27 @@
         </li>
       </ul>
     </header>
+    
     <div id="content">
+      
       <div id="blog">
-        <div class="blog-post">
-          {% for post in site.posts %}
+        {% for post in site.posts %}
+          <div class="blog-post">
+            <span class="expander">&#9654;</span>
             {{ post.content }}
-          {% endfor %}
-        </div>
+          </div>
+        {% endfor %}
       </div>
+      
     </div>
+    
     <script>
-      $(".blog-post").click(function(){
-        $(this).css({"max-height": "1000em"});
-      })
+      $(".blog-post").click(function(e){
+        if(!$(e.target).is(".expander")) $(this).addClass("expanded");
+      });
+      $(".expander").click(function(e){
+        $(this).parent().toggleClass("expanded");
+      });
     </script>
   </body>
 </html>

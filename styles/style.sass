@@ -2,20 +2,23 @@
 ---
 
 $lgrey: #fbfbfb
+$dgrey: #202020
 
 .light
   color: #555555
   background: $lgrey
+  header
+    background-color: $lgrey
   .divider
     border-color: #909090
   a
     color: #909090
     &:hover, &.current-menu-item
-      color: #202020
+      color: $dgrey
 
 .dark
   color: #909090
-  background: #202020
+  background: $dgrey
   .divider
     border-color: #555555
   a
@@ -23,6 +26,9 @@ $lgrey: #fbfbfb
     &:hover, &.current-menu-item
       color: $lgrey
 
+//\::-webkit-scrollbar
+//  display: none
+  
 html
   height: 100%
   overflow: hidden
@@ -33,11 +39,14 @@ body
   text-align: center
   font-size: 12px
   letter-spacing: 0.1em
-  height: 100%
-  width: 100%
   overflow: scroll
   margin: 0
   padding: 0
+  position: absolute
+  top: 15em
+  left: 0
+  bottom: 0
+  right: 0
 
 h1
   text-transform: uppercase
@@ -51,7 +60,6 @@ h2
 h3
   font-family: RalewayBold
   font-weight: Normal
-  padding: 0.5em
 
 a
   text-decoration: none
@@ -65,11 +73,9 @@ a
 p
   padding-bottom: 0.5em
 
-\::-webkit-scrollbar
-  display: none
-
 header
-  position: relative
+  position: fixed
+  top: 0
   z-index: 11
   height: 15em
   width: 100%
@@ -104,14 +110,31 @@ header
 #content
   opacity: 1
   text-align: left
-  overflow: scroll
-  height: 75%
   width: 95%
   margin: auto
   #blog
     width: 90%
-    max-width: 1000px
+    max-width: 80em
     margin: auto
+    .blog-post
+      max-height: 17em
+      transition: 0.5s
+      transition-timing-function: cubic-bezier(0,1,0.5,1)
+      overflow-y: hidden
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26)
+      margin: 1em
+      padding: 1em
+      &.expanded
+        max-height: 500em
+        transition-timing-function: ease-in
+        .expander
+          transform: rotate(90deg)
+          color: green
+      .expander
+        line-height: 1.5em
+        font-size: 3em
+        float: left
+        transition: 0.5s
     img
       width: 37%
       float: left

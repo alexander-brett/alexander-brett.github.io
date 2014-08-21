@@ -177,7 +177,8 @@ sf.maxPoll   = 200
         if (!(username && password && url)) {
             fail = project.createTask("fail");
             fail.setMessage("Either you didn't specify an environment, or the specified "
-              + "environment didn't have the correct properties defined in build.properties.local.");
+              + "environment didn't have the correct properties defined in "
+              + "build.properties.local.");
             fail.execute();
         }
         

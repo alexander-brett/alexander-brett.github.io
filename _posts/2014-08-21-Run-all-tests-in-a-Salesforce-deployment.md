@@ -3,6 +3,8 @@
 
 # Running all tests during a Salesforce.com deployment
 
+## 21-08-2014
+
 Salesforce.com deployments to a production environment require all unit tests to
 be run at the time of deployment, and roll back if any of them encounter an
 error. This is a desirable behaviour for a continuous integration environment,
@@ -125,30 +127,7 @@ a method called addRunTest. These are what we need to use to run the tests. Just
 like the DeployTask itself, we can instatiate CodeNameElement with
 `java.lang.Class.forName().newInstance()`, and add that instance as a child:
 
-###deploy.js
 ~~~javascript
-var env  = project.getProperty("e");
-username = project.getProperty(env + ".username");
-password = project.getProperty(env + ".password");
-url      = project.getProperty(env + ".url");
-
-if (!(username && password && url)) {
-  fail = project.createTask("fail");
-  fail.setMessage("Either you didn't specify an environment, or the specified "
-    + "environment didn't have the correct properties defined in build.properties.local.");
-  fail.execute();
-}
-
-var task = java.lang.Class.forName("com.salesforce.ant.DeployTask").newInstance();
-task.setTaskName("SF deploy");
-task.setPassword(password);
-task.setUsername(username);
-task.setServerURL(url);
-task.setDeployRoot("myPkg");
-task.setProject(project);
-task.setMaxPoll(project.getProperty("sf.maxpoll"));
-
-if (project.getProperty("v")) task.setCheckOnly(true);
 if (project.getProperty("t")) {
   var tests = (project.getProperty(testClasses)|| '').split("\n"));
   
@@ -167,8 +146,69 @@ if (project.getProperty("t")) {
     task.addRunTest(codeNameElement);
   }
 };
-
-task.execute();
 ~~~
 
-From my point of view, 
+This is really ready for use at this point, but for my own satisfaction we can
+make this even more javascript-oriented. If you crack open lib/ant.jar in your
+ant installation, you'll see ExecTask.class halfway down. This is the underlying
+class for `<exec/>`, and the only thing different about this class is that in
+order to append a child '<arg/>' element, you need to use 'createArg().setValue()'.
+Putting this into action, we can finish bringing all the logic into javascript -
+this javascript works with the build.xml defined at the top of this post.
+
+###deploy.js
+~~~javascript
+function getTestClasses(){
+	var propertyName = "testClassesList";
+	var exec = project.createTask("exec");
+	exec.setExecutable("grep");
+	exec.setOutputproperty(propertyName);
+	
+	exec.createArg().setValue("-lEr");
+	exec.createArg().setValue("@is[tT]est|test[mM]ethod");
+	exec.createArg().setValue("src/classes/");
+	exec.execute();
+	
+	var result = project.getProperty(propertyName);
+	return (typeof result == "string" ? result.split("\n") : [])
+		.map   (function(e,i,a){ return (m = /(\w+)\.cls/.exec(e)) ? m[0] : e;})
+		.filter(function(e,i,a){ return a.indexOf(e) == i });
+}
+
+(function main(){
+  var env  = project.getProperty("e");
+  username = project.getProperty(env + ".username");
+  password = project.getProperty(env + ".password");
+  url      = project.getProperty(env + ".url");
+  
+  if (!(username && password && url)) {
+    fail = project.createTask("fail");
+    fail.setMessage("Either you didn't specify an environment, or the specified "
+      + "environment didn't have the correct properties defined in build.properties.local.");
+    fail.execute();
+  }
+  
+  var task = java.lang.Class.forName("com.salesforce.ant.DeployTask").newInstance();
+  task.setTaskName("SF deploy");
+  task.setPassword(password);
+  task.setUsername(username);
+  task.setServerURL(url);
+  task.setDeployRoot("myPkg");
+  task.setProject(project);
+  task.setMaxPoll(project.getProperty("sf.maxpoll"));
+  
+  if (project.getProperty("v")) task.setCheckOnly(true);
+  
+  if (project.getProperty("t")) {
+    for each (test in getTestClasses()) {
+      var codeNameElement = java.lang.Class.forName(
+          "com.salesforce.ant.DeployTask$CodeNameElement"
+        ).newInstance();
+      codeNameElement.addText(test);
+      task.addRunTest(codeNameElement);
+    }
+  };
+  
+  task.execute();
+}());
+~~~

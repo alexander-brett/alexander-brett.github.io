@@ -35,9 +35,6 @@ $dgrey: #202020
     &:hover, &.current-menu-item
       color: $lgrey
 
-//\::-webkit-scrollbar
-//  display: none
-  
 html
   height: 100%
   overflow: hidden
@@ -160,10 +157,34 @@ header
       width: 37%
       float: left
   #photo
-    width: 90%
-    max-width: 80em
+    width: 90vw
     margin: auto
-    
+    height: 100%
+    #masonry-width
+      width: 2vw
+      height: 0
+      margin: 0
+      padding: 0
+    .photo-container
+      width: 28vw
+      height: 28vw
+      margin: 1vw
+      float: left
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.9)
+      position: relative
+      background: $dgrey
+      z-index: 1
+      img
+        max-height: 90%
+        max-width: 90%
+        position: relative
+        margin: 0
+        padding: 0
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+      &.expanded
+        z-index: 4
 
 #footer
   position: absolute

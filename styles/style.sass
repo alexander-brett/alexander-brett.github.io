@@ -12,6 +12,25 @@ $dgrey: #202020
   background: -ms-linear-gradient(top, rgba(251,251,251,0) 0%,rgba(251,251,251,1) 100%)
   background: linear-gradient(to bottom, rgba(251,251,251,0) 0%,rgba(251,251,251,1) 100%)
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fbfbfb', endColorstr='#fbfbfb',GradientType=0 )
+  
+@mixin scrollbar()
+  overflow-y: scroll
+  height: 100%
+  &::-webkit-scrollbar
+    width: 8px
+    background-color: rgba(0,0,0,0)
+    -webkit-border-radius: 100px
+    &:hover
+      background-color: rgba(0, 0, 0, 0.09)
+    &:horizontal
+      display: none
+  &::-webkit-scrollbar-thumb
+    &:vertical
+      background: rgba(0,0,0,0.5)
+      -webkit-border-radius: 100px
+      &:active
+        background: rgba(0,0,0,0.61)
+        -webkit-border-radius: 100px
 
 .light
   color: #555555
@@ -45,7 +64,7 @@ body
   text-align: center
   font-size: 12px
   letter-spacing: 0.1em
-  overflow: scroll
+  overflow: hidden
   margin: 0
   padding: 0
   position: absolute
@@ -116,20 +135,22 @@ header
 #content
   opacity: 1
   text-align: left
-  width: 95%
-  margin: auto
+  width: 300vw
+  overflow: hidden
   #blog
-    width: 90%
-    max-width: 80em
-    margin: auto
+    @include scrollbar()
+    width: 100vw
+    float: left
     .blog-post
+      width: 90%
+      max-width: 80em
+      margin:  1em auto 1em auto
       position: relative
       max-height: 17em
       transition: 0.5s
       transition-timing-function: cubic-bezier(0,1,0.5,1)
       overflow-y: hidden
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26)
-      margin: 1em
       padding: 1em
       .fade
         position: absolute
@@ -157,34 +178,23 @@ header
       width: 37%
       float: left
   #photo
-    width: 90vw
-    margin: auto
-    height: 100%
-    #masonry-width
-      width: 2vw
-      height: 0
-      margin: 0
-      padding: 0
-    .photo-container
-      width: 28vw
-      height: 28vw
-      margin: 1vw
-      float: left
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.9)
-      position: relative
-      background: $dgrey
-      z-index: 1
-      img
-        max-height: 90%
-        max-width: 90%
-        position: relative
-        margin: 0
-        padding: 0
-        top: 50%
-        left: 50%
-        transform: translate(-50%,-50%)
-      &.expanded
-        z-index: 4
+    @include scrollbar()
+    width: 100vw
+    float: left
+    .tiles
+      width: 90vw
+      margin: auto
+      .photo-container
+        width: 28vw
+        height: 28vw
+        margin: 1vw
+        float: left
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.9)
+        z-index: 1
+        background: #fff
+        overflow: hidden
+        background-size: cover
+        background-position: center
 
 #footer
   position: absolute

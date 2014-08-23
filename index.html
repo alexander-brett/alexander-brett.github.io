@@ -10,23 +10,21 @@
     <link rel="stylesheet" href="styles/raleway.css"/>
     <link rel="stylesheet" href="styles/style.css"/>
     <link rel="stylesheet" href="styles/highlight-rouge.css">
-    <link rel="stylesheet" href="styles/scrollbars.css">
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="js/masonry.min.js"></script>
   </head>
   
   <body class="light">
     <header>
-      <a href="#" class="home">
+      <a href=mailto:alex@alexander-brett.co.uk class="home">
         <h1>Alexander Brett</h1>
       </a>
       <ul id="headerMenu" class="menu">
         <li class="menu-item">
-          <a href="#">Photo</a>
+          <a href="#blog">Code</a>
         </li>
         <li class="menu-item">
-          <a href="#">Code</a>
+          <a href="#photo">Photo</a>
         </li>
         <li class="menu-item">
           <a href="mailto:alex@alexander-brett.co.uk">Email</a>
@@ -35,110 +33,33 @@
     </header>
     
     <div id="content">
-    
-      <div id="photo">
-        <div id="masonry-width"></div>
-        <div class="photo-container">
-          <img src="img/mandelbrot 6000x1081.png"/>
-        </div>
-        <div class="photo-container">
-          <img src="img/Esther-14.jpg"/>
-        </div>
-        <div class="photo-container">
-          <img src="img/Esther-19.jpg"/>
-        </div>
-        <div class="photo-container">
-          <img src="img/Esther-38.jpg"/>
-        </div>
-        <div class="photo-container">
-          <img src="img/Esther-41.jpg"/>
-        </div>
-        <div class="photo-container">
-          <img src="img/Esther-44.jpg"/>
-        </div>
-      </div>
       
-      <div id="blog" style="display:none">
+      <div id="blog">
         {% for post in site.posts %}
           <div class="blog-post">
             <span class="expander">&#9654;</span>
             <div class="fade"></div>
             {{ post.content }}
           </div>
-          
         {% endfor %}
+      </div>
+      
+      <div id="photo">
+        <div class="tiles">
+          <div class="photo-container" style="background-image: url('img/mandelbrot 6000x1081.png')"></div>
+          <div class="photo-container" style="background-image: url('img/Esther-14.jpg')"></div>
+          <div class="photo-container" style="background-image: url('img/Esther-19.jpg')"></div>
+          <div class="photo-container" style="background-image: url('img/Esther-38.jpg')">
+          </div>
+          <div class="photo-container" style="background-image: url('img/Esther-41.jpg')">
+          </div>
+          <div class="photo-container" style="background-image: url('img/Esther-44.jpg')">
+          </div>
+        </div>
       </div>
       
     </div>
     
-    <script>
-      
-      var msnry = new Masonry(
-        document.querySelector('#photo'),
-        {
-          columnWidth: "#masonry-width",
-          itemSelector: ".photo-container",
-          transitionDuration: 200
-        }
-      );
-    
-      $(".blog-post").click(function(e){
-        if(!$(e.target).is(".expander")) $(this).addClass("expanded");
-      });
-      
-      $(".expander").click(function(e){
-        $(this).parent().toggleClass("expanded");
-      });
-      
-      recalculateHeight = function(e) {
-        var vh = document.documentElement.clientHeight * 0.01;
-        var vw = document.documentElement.clientWidth * 0.01;
-        var em = parseInt(getComputedStyle(document.getElementsByTagName('body')[0]).fontSize);
-        var imgW = $(e).find("img").get(0).naturalWidth
-        var imgH = $(e).find("img").get(0).naturalHeight
-        var scrRatio = 88*vw/(100*vh-20*em);
-        var newW, newH;
-          
-        if (imgW/imgH > scrRatio) {
-          newW = Math.max(28*vw,Math.min(88*vw, imgW));
-          newH = Math.max(28*vw,newW*imgH/imgW);
-        } else {
-          newH = Math.max(28*vw,Math.min(100*vh-20*em, imgH));
-          newW = Math.max(28*vw,newH*imgW/imgH);
-        }
-        
-        return {"width": newW, "height": newH};
-      }
-      
-      $(".photo-container").click(function(e){
-        var self = this;
-        $(self).toggleClass("expanded").animate(
-          $(self).is(".expanded") ? recalculateHeight(self) : {"width": "28vw", "height": "28vw"},
-          {
-            duration: 200,
-            complete: function(){
-              msnry.layout();
-              setTimeout(
-                function(){
-                  var parent = $(self).parent();
-                  parent.animate({
-                      scrollTop:  parent.scrollTop() - parent.offset().top + $(self).offset().top
-                  })
-                }, 
-                400);
-            }
-          }
-        );
-      });
-      
-      $(window).resize(function(){
-        $(".photo-container.expanded").each(function(){
-          $(this).css(recalculateHeight(this));
-        })
-        msnry.layout();
-      });
-      
-      
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

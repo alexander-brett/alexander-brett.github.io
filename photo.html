@@ -1,0 +1,21 @@
+---
+
+galleries:
+  - cover: mandelbrot 6000x1081.png
+    title: mandelbrot
+  - cover: Esther-19.jpg
+    title: esther
+  
+---
+
+{% include header.html %}
+
+  <div id="photo" class="gallery">
+    <div class="tiles">
+      {% for gallery in page.galleries %}
+        <div class="photo-container" style="background-image: url('img/{{ gallery.cover }}')"><a href="galleries/{{ gallery.title }}.html#gallery"></a></div>
+      {% endfor %}
+    </div>
+  </div>
+
+{% include footer.html %}

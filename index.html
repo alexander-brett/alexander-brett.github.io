@@ -1,65 +1,16 @@
 ---
 ---
-<html>
-  <head>
-    <title>Alexander Brett</title>
-    <meta name="author" content="Alexander Brett">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+{% include header.html %}
     
-    <link rel="stylesheet" href="styles/raleway.css"/>
-    <link rel="stylesheet" href="styles/style.css"/>
-    <link rel="stylesheet" href="styles/highlight-rouge.css">
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  </head>
-  
-  <body class="light">
-    <header>
-      <a href=mailto:alex@alexander-brett.co.uk class="home">
-        <h1>Alexander Brett</h1>
-      </a>
-      <ul id="headerMenu" class="menu">
-        <li class="menu-item">
-          <a href="#blog">Code</a>
-        </li>
-        <li class="menu-item">
-          <a href="#photo">Photo</a>
-        </li>
-        <li class="menu-item">
-          <a href="mailto:alex@alexander-brett.co.uk">Email</a>
-        </li>
-      </ul>
-    </header>
-    
-    <div id="content">
-      
-      <div id="blog">
-        {% for post in site.posts %}
-          <div class="blog-post">
-            <span class="expander">&#9654;</span>
-            <div class="fade"></div>
-            {{ post.content }}
-          </div>
-        {% endfor %}
+  <div id="blog">
+    {% for post in site.posts %}
+      <div class="blog-post expanded">
+        <span class="expander">&#9654;</span>
+        <div class="fade"></div>
+        {{ post.content }}
       </div>
-      
-      <div id="photo">
-        <div class="tiles">
-          <div class="photo-container" style="background-image: url('img/mandelbrot 6000x1081.png')"></div>
-          <div class="photo-container" style="background-image: url('img/Esther-14.jpg')"></div>
-          <div class="photo-container" style="background-image: url('img/Esther-19.jpg')"></div>
-          <div class="photo-container" style="background-image: url('img/Esther-38.jpg')">
-          </div>
-          <div class="photo-container" style="background-image: url('img/Esther-41.jpg')">
-          </div>
-          <div class="photo-container" style="background-image: url('img/Esther-44.jpg')">
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    
-    <script src="js/script.js"></script>
-  </body>
-</html>
+    {% endfor %}
+  </div>
+
+{% include footer.html %}

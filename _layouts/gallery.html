@@ -4,20 +4,10 @@
   <div id="gallery" class="gallery">
   <a class="back" href="/photo.html">&#9664;</a>
     <div class="tiles">
-      <div class="photo-container gallery-item" style="background-image: url('../img/{{ page.cover }}')"><a href="#{{ page.cover | replace: ' ', '' | replace: '.', '' }}"></a></div>
       {% for photo in page.photos %}
-        <div class="photo-container gallery-item" style="background-image: url('../img/{{ photo }}')"><a href="#{{ photo | replace: ' ', '' | replace: '.', '' }}"></a></div>
+        <div class="photo-container gallery-item" style="background-image: url('/img/{{ page.title }}/{{ photo }}')"><a href="/img/{{ page.title }}/{{ photo }}"></a></div>
       {% endfor %}
     </div>
   </div>
-  
-  <div id="{{ page.cover | replace: ' ', '' | replace: '.', '' }}" class="gallery-expanded" style="background-image: url('../img/{{ page.cover }}')" >
-    <a class="back" href="#gallery">&#9664;</a>
-  </div>
-  {% for photo in page.photos %}
-    <div id="{{ photo | replace: ' ', '' | replace: '.', '' }}" class="gallery-expanded" style="background-image: url('../img/{{ photo }}')">
-      <a class="back" href="#gallery">&#9664;</a>
-    </div>
-  {% endfor %}
 
 {% include footer.html %}

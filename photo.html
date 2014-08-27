@@ -1,11 +1,13 @@
 ---
-
 galleries:
-  - cover: mandelbrot 6000x1081.png
-    title: mandelbrot
-  - cover: Esther-19.jpg
+  #- cover: 30.jpg
+  #  title: catz
+  - cover: 19.jpg
     title: esther
-  
+  - title: coe
+    cover: 15.jpg
+  - title: mm
+    cover: 2.jpg
 ---
 
 {% include header.html %}
@@ -13,7 +15,7 @@ galleries:
   <div id="photo" class="gallery">
     <div class="tiles">
       {% for gallery in page.galleries %}
-        <div class="photo-container" style="background-image: url('img/{{ gallery.cover }}')"><a href="galleries/{{ gallery.title }}.html#gallery"></a></div>
+        <div class="photo-container" style="background-image: url('img/{{ gallery.title }}/{{ gallery.cover }}')"><a href="galleries/{{ gallery.title }}.html#gallery"></a></div>
       {% endfor %}
     </div>
   </div>

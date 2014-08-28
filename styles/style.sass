@@ -41,7 +41,7 @@ $dgrey: #202020
     border-color: #909090
   a
     color: #909090
-    &:hover, &.current-menu-item
+    &:hover, &.activeLink
       color: $dgrey
 
 .dark
@@ -51,7 +51,7 @@ $dgrey: #202020
     border-color: #555555
   a
     color: #555555
-    &:hover, &.current-menu-item
+    &:hover, &.activeLink
       color: $lgrey
 
 html
@@ -104,24 +104,17 @@ header
   z-index: 11
   height: 15em
   width: 100%
-  -webkit-transition-property: top, bottom
-  -webkit-transition-duration: 0.5s
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26)
-  animation: top 0.5s
   h1
-    text-transform: uppercase
     white-space: nowrap
-    font:
-      family: RalewayThin
-      weight: 100
-      size: 5em
+    font-size: 5em
     letter-spacing: 0.2em
     margin: 0.5em
   a
     display: inline-block
     margin: 0 auto 0 auto
     text-align: center
-  ul.menu
+  ul
     text-transform: uppercase
     margin: 0 auto 0 auto
     display: table
@@ -132,7 +125,6 @@ header
       height: 1em
       padding: 1em
       overflow: hidden
-      
 
 .back
   position: absolute
@@ -140,27 +132,28 @@ header
   left: 0
   font-size: 3em
   padding: 0.5em
+  
+#contentDiv
+  white-space: normal
+  position: absolute
+  width: 100vw
 
 #content
   opacity: 1
   text-align: left
   white-space: nowrap
   overflow: hidden
-  div
-    white-space: normal
   .gallery-expanded
-    width: 100%
-    float: left
+    @extend #contentDiv
     height: 100%
-    position: relative
+    z-index: 5
     background:
       repeat: no-repeat
       position: center
       size: contain
   #blog
+    @extend #contentDiv
     @include scrollbar()
-    width: 100vw
-    float: left
     .blog-post
       width: 90%
       max-width: 80em
@@ -195,9 +188,8 @@ header
           transform: rotate(90deg)
           color: #922
   .gallery
+    @extend #contentDiv
     @include scrollbar()
-    width: 100vw
-    float: left
     .tiles
       width: 90vw
       margin: auto

@@ -15,7 +15,9 @@ galleries:
   <div id="photo" class="gallery">
     <div class="tiles">
       {% for gallery in page.galleries %}
-        <div class="photo-container" style="background-image: url('img/{{ gallery.title }}/{{ gallery.cover }}')"><a href="galleries/{{ gallery.title }}.html#gallery"></a></div>
+        <div class="photo-container" style="background-image: url('/img/{{ gallery.title }}/{{ gallery.cover }}')">
+          <a  class="internal" href="/galleries/{{ gallery.title }}.html"></a>
+        </div>
       {% endfor %}
     </div>
   </div>

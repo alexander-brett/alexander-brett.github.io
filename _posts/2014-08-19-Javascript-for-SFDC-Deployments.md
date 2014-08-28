@@ -1,4 +1,6 @@
 ---
+title: Writing Salesforce ant deployment tasks using Javascript
+date: 2014-08-19
 ---
 #Writing Salesforce ant deployment tasks using Javascript
 

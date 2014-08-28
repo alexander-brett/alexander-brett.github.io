@@ -2,10 +2,12 @@
 
 
   <div id="gallery" class="gallery">
-  <a class="back" href="/photo.html">&#9664;</a>
+    <a class="back internal" href="/photo.html">&#9664;</a>
     <div class="tiles">
       {% for photo in page.photos %}
-        <div class="photo-container gallery-item" style="background-image: url('/img/{{ page.title }}/{{ photo }}')"><a href="/img/{{ page.title }}/{{ photo }}"></a></div>
+        <div class="photo-container gallery-item" style="background-image: url('/img/{{ page.title }}/{{ photo }}')">
+          <a  class="internal" href="/img/{{ page.title }}/{{ photo }}"></a>
+        </div>
       {% endfor %}
     </div>
   </div>

@@ -7,14 +7,19 @@ function highlightLinks(){
 }
 
 function transitionContent(newDiv){
-    $("#content").empty();
+    var $oldDiv = $($("#content").children());
+    var $newDiv = $(newDiv).hide();
     
-    var $newDiv = $(newDiv)
+    $oldDiv.fadeOut(function(){
+      $oldDiv.remove();
+      $newDiv.fadeIn();
+    });
     
-    $("#content").append($(newDiv))
+    
+    $("#content").append($newDiv);
 }
 
-function navigateToLink(href){
+function navigateToLink(href, callback){
   $.ajax(href).done(function(data){
     var newDiv;
     if(href.match(/.png|.jpg|.webm|.jpeg/)) {
@@ -25,6 +30,7 @@ function navigateToLink(href){
       newDiv = $($(data)[19]).children()[0];
     }
     transitionContent(newDiv);
+    callback();
     highlightLinks();
     setupLinks();
   });
@@ -43,8 +49,7 @@ function setupLinks(){
   
   $("a.internal:not(.activeLink)").click(function(e){
     var href = $(this).attr('href');
-    history.pushState(null, null, href);
-    navigateToLink(href);
+    navigateToLink(href, function(){history.pushState(null, null, href)});
     e.preventDefault();
   });
   

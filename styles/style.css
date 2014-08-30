@@ -1,0 +1,238 @@
+.light {
+  color: #555555;
+  background: #fbfbfb; }
+  .light header {
+    background-color: #fbfbfb; }
+  .light .divider {
+    border-color: #909090; }
+  .light a {
+    color: #909090; }
+    .light a:hover, .light a.activeLink {
+      color: #202020; }
+
+.dark {
+  color: #909090;
+  background: #202020; }
+  .dark .divider {
+    border-color: #555555; }
+  .dark a {
+    color: #555555; }
+    .dark a:hover, .dark a.activeLink {
+      color: #fbfbfb; }
+
+html {
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  font-family: RalewayMedium, Helvetica, Ariel, sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 15em;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+h1 {
+  text-transform: uppercase;
+  font-family: RalewayThin;
+  font-weight: 100; }
+
+h2 {
+  text-transform: uppercase;
+  font-weight: normal; }
+
+h3 {
+  font-family: RalewayBold;
+  font-weight: Normal; }
+
+a {
+  text-decoration: none;
+  position: relative;
+  z-index: 100; }
+  a .activeLink {
+    text-transform: uppercase;
+    font-family: RalewayBold;
+    font-weight: normal; }
+
+p {
+  padding-bottom: 0.5em; }
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  height: 15em;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+  header h1 {
+    white-space: nowrap;
+    font-size: 5em;
+    letter-spacing: 0.2em;
+    margin: 0.5em; }
+  header a {
+    display: inline-block;
+    margin: 0 auto 0 auto;
+    text-align: center; }
+  header ul {
+    text-transform: uppercase;
+    margin: 0 auto 0 auto;
+    display: table;
+    table-layout: fixed; }
+    header ul li {
+      text-align: center;
+      display: table-cell;
+      height: 1em;
+      padding: 1em;
+      overflow: hidden; }
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3em;
+  padding: 0.5em; }
+
+#contentDiv, #content .gallery-expanded, #content #blog, #content .gallery {
+  white-space: normal;
+  position: absolute;
+  width: 100vw; }
+
+#content {
+  opacity: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden; }
+  #content .gallery-expanded {
+    height: 100%;
+    z-index: 5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+  #content #blog {
+    overflow-y: scroll;
+    height: 100%; }
+    #content #blog::-webkit-scrollbar {
+      width: 8px;
+      background-color: transparent;
+      -webkit-border-radius: 100px; }
+      #content #blog::-webkit-scrollbar:hover {
+        background-color: rgba(0, 0, 0, 0.09); }
+      #content #blog::-webkit-scrollbar:horizontal {
+        display: none; }
+    #content #blog::-webkit-scrollbar-thumb:vertical {
+      background: rgba(0, 0, 0, 0.5);
+      -webkit-border-radius: 100px; }
+      #content #blog::-webkit-scrollbar-thumb:vertical:active {
+        background: rgba(0, 0, 0, 0.61);
+        -webkit-border-radius: 100px; }
+    #content #blog .blog-post {
+      width: 90%;
+      max-width: 80em;
+      margin: 1em auto 1em auto;
+      position: relative;
+      max-height: 17em;
+      transition: 0.5s;
+      transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+      overflow-y: hidden;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      padding: 1em; }
+      #content #blog .blog-post .fade {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 15em;
+        width: 100%;
+        height: 4em;
+        transition: top 0.5s;
+        background: -moz-linear-gradient(top, rgba(251, 251, 251, 0) 0%, #fbfbfb 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(251, 251, 251, 0)), color-stop(100%, #fbfbfb));
+        background: -webkit-linear-gradient(top, rgba(251, 251, 251, 0) 0%, #fbfbfb 100%);
+        background: -o-linear-gradient(top, rgba(251, 251, 251, 0) 0%, #fbfbfb 100%);
+        background: -ms-linear-gradient(top, rgba(251, 251, 251, 0) 0%, #fbfbfb 100%);
+        background: linear-gradient(to bottom, rgba(251, 251, 251, 0) 0%, #fbfbfb 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fbfbfb', endColorstr='#fbfbfb',GradientType=0 ); }
+      #content #blog .blog-post .expander {
+        line-height: 1.5em;
+        font-size: 3em;
+        float: left;
+        transition: 0.5s; }
+      #content #blog .blog-post.expanded {
+        max-height: 500em;
+        transition-timing-function: ease-in; }
+        #content #blog .blog-post.expanded .fade {
+          top: 498em; }
+        #content #blog .blog-post.expanded .expander {
+          transform: rotate(90deg);
+          color: #922; }
+  #content .gallery {
+    overflow-y: scroll;
+    height: 100%; }
+    #content .gallery::-webkit-scrollbar {
+      width: 8px;
+      background-color: transparent;
+      -webkit-border-radius: 100px; }
+      #content .gallery::-webkit-scrollbar:hover {
+        background-color: rgba(0, 0, 0, 0.09); }
+      #content .gallery::-webkit-scrollbar:horizontal {
+        display: none; }
+    #content .gallery::-webkit-scrollbar-thumb:vertical {
+      background: rgba(0, 0, 0, 0.5);
+      -webkit-border-radius: 100px; }
+      #content .gallery::-webkit-scrollbar-thumb:vertical:active {
+        background: rgba(0, 0, 0, 0.61);
+        -webkit-border-radius: 100px; }
+    #content .gallery .tiles {
+      width: 90vw;
+      margin: auto; }
+      #content .gallery .tiles .photo-container {
+        width: 28vw;
+        height: 28vw;
+        margin: 1vw;
+        float: left;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        z-index: 1;
+        background: #fff;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center; }
+        #content .gallery .tiles .photo-container:nth-child(3n+1) {
+          clear: left; }
+        #content .gallery .tiles .photo-container:nth-child(-n+3) {
+          margin-top: 0; }
+        #content .gallery .tiles .photo-container:nth-last-child(-n+3) {
+          margin-bottom: 0; }
+        #content .gallery .tiles .photo-container a {
+          height: 100%;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          display: block; }
+
+#footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding-bottom: 10px;
+  background: transparent;
+  text-align: center;
+  max-height: 70px; }
+  #footer #licence {
+    font-size: 8px;
+    text-align: right;
+    text-transform: none;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    right: 0;
+    z-index: 99;
+    background: transparent;
+    padding-right: 2px; }
+
+/*# sourceMappingURL=style.css.map */

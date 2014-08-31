@@ -72,7 +72,7 @@ task.execute();
 ~~~
 
 ###build.properties
-~~~config
+~~~
 dev.username  = user@example.com.dev
 dev.password  = passwordToken
 dev.serverurl = https://test.salesforce.com

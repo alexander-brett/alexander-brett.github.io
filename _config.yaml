@@ -1,6 +1,7 @@
-markdown:     redcarpet
-highlighter: rouge
+safe: true
+lsi: false
+highlighter: pygments
+markdown: redcarpet
 
 redcarpet:
-  extensions: ["footnotes"]
-  
+  extensions: ['footnotes']

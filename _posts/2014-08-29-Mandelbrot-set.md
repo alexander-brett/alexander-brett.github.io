@@ -9,9 +9,9 @@ to generate the Mandelbrot set in as few characters as possible. I'm happy with
 my javascript entry as an example of how a usually pretty readable language can
 be made horrendous! Here's the entry:
 
-```js
+~~~js
 document.body.appendChild(V=document.createElement('Canvas'));j=(D=(X=V.getContext('2d')).createImageData(Z=V.width=V.height=255,Z)).data;for(x=Z*Z;x--;){k=a=b=c=0;while(a*a+b*b<4&&Z>k++){c=a*a-b*b+4*(x%Z)/Z-3;b=2*a*b+4*x/(Z*Z)-2;a=c;}j[4*x]=99*k%256;j[4*x+3]=Z;}X.putImageData(D,0,0);
-```
+~~~
 
 And here's the output:
 
@@ -19,7 +19,7 @@ And here's the output:
 
 I've indented the code made the variables more verbose, and added some comments:
 
-```js
+~~~js
 document.body.appendChild(Canvas=document.createElement('Canvas'));
 dataArray=(
   imageData=(
@@ -52,7 +52,7 @@ for(x=Z*Z;x--;){
   dataArray[4*x+3]=Z;
 }
 context.putImageData(imageData,0,0);
-```
+~~~
 
 What I wanted to do is adapt and extend this code a bit, which doesn't really fit
 into the code-golf format. I added zooming on the left and right clicks, a few
@@ -64,7 +64,7 @@ tweaking, try [this version](http://jsfiddle.net/ali0sha/7Jjex/1/).
 <canvas id="mandelbrotCanvas"></canvas>
 <script src="/js/mandelbrot.js"></script>
 
-```js
+~~~js
 var generateMandelbrot = function (
     Canvas, iterations, limit, cX, cY, scale, u, w, z
 ) {
@@ -124,4 +124,4 @@ var generateMandelbrot = function (
         );
     });
 }());
-```
+~~~

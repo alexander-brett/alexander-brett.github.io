@@ -1,7 +1,7 @@
 ---
+title: The Mandelbrot set in Javascript
+date: 2014-08-29
 ---
-
-#The Mandelbrot set in Javascript
 
 A while back I came across a fun puzzle on
 [codegolf.stackexchange.com](http://codegolf.stackexchange.com/questions/23423/mandelbrot-image-in-every-language/24080#24080)

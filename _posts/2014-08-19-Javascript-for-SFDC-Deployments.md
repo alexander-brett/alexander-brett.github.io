@@ -2,9 +2,6 @@
 title: Writing Salesforce ant deployment tasks using Javascript
 date: 2014-08-19
 ---
-#Writing Salesforce ant deployment tasks using Javascript
-
-##19-08-2014
 
 The Force.com deployment tool is a .jar file defining some extra tasks such as `sf:deploy`
 and `sf:retrieve`. Examining the example build.xml file we see several calls of the form:
@@ -127,7 +124,8 @@ and glancing through those classes to find appropriate getters and setters, we c
     </target>
     
     <scriptdef name="deployscript" language="javascript">
-      var task = java.lang.Class.forName("com.salesforce.ant.DeployTask").newInstance();
+      var task = java.lang.Class.forName("com.salesforce.ant.DeployTask")
+        .newInstance();
       task.setTaskName("SF deploy");
       task.setPassword(project.getProperty("sf.password"));
       task.setUsername(project.getProperty("sf.username"));
@@ -186,7 +184,8 @@ sf.maxPoll   = 200
             fail.execute();
         }
         
-        var task = java.lang.Class.forName("com.salesforce.ant.DeployTask").newInstance();
+        var task = java.lang.Class.forName("com.salesforce.ant.DeployTask")
+          .newInstance();
         task.setTaskName("SF deploy");
         task.setPassword(password);
         task.setUsername(username);

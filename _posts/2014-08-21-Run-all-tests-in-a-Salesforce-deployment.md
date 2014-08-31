@@ -1,9 +1,7 @@
 ---
+title: Running all tests during a Salesforce.com deployment
+date: 2014-08-21
 ---
-
-# Running all tests during a Salesforce.com deployment
-
-## 21-08-2014
 
 Salesforce.com deployments to a production environment require all unit tests to
 be run at the time of deployment, and roll back if any of them encounter an
@@ -51,8 +49,9 @@ url      = project.getProperty(env + ".url");
 
 if (!(username && password && url)) {
   fail = project.createTask("fail");
-  fail.setMessage("Either you didn't specify an environment, or the specified "
-    + "environment didn't have the correct properties defined in build.properties.local.");
+    fail.setMessage("Either you didn't specify an environment, or "
+      + "the specified environment didn't have the correct properties "
+      + "defined in build.properties.");
   fail.execute();
 }
 
@@ -183,12 +182,14 @@ function getTestClasses(){
   
   if (!(username && password && url)) {
     fail = project.createTask("fail");
-    fail.setMessage("Either you didn't specify an environment, or the specified "
-      + "environment didn't have the correct properties defined in build.properties.local.");
+    fail.setMessage("Either you didn't specify an environment, or "
+      + "the specified environment didn't have the correct properties "
+      + "defined in build.properties.");
     fail.execute();
   }
   
-  var task = java.lang.Class.forName("com.salesforce.ant.DeployTask").newInstance();
+  var task = java.lang.Class.forName("com.salesforce.ant.DeployTask")
+    .newInstance();
   task.setTaskName("SF deploy");
   task.setPassword(password);
   task.setUsername(username);

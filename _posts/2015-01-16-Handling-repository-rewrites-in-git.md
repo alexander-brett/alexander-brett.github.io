@@ -65,11 +65,11 @@ I ensured that these two files are propagated onto every branch (you could alter
 On rollout day, I got to the office early and made myself a strong coffee, then did the following:
 
  - Merged master into develop (just to make sure)
- - Tagged develop as MASS_CHANGE_DEVELOP_BEFORE
+ - Tagged develop as `MASS_CHANGE_DEVELOP_BEFORE`
  - Ran doMassChange.bat on develop
  - Ran doMassChange.bat on master
  - Ran `git merge -sours master` on develop
- - Tagged develop as MASS_CHANGE_DEVELOP_AFTER
+ - Tagged develop as `MASS_CHANGE_DEVELOP_AFTER`
  - Pushed everything (including tags) to the server
  - Ran applyMassChangeCleanly.bat on QA
  - Pushed QA to the server

@@ -5,7 +5,7 @@ date: 2015-01-15
 
 ## Why compressing your profiles is a good idea
 
-When handling Salesforce.com metadata, especially attempting to store it in source control, it doesn't take to notice the following:
+When handling Salesforce.com metadata, especially attempting to store it in source control, it doesn't take long to notice the following:
 
  - Profiles are big. In fact, they contain 3-10 lines for every Apex Class, Visualforce Page, Object, Field, App, and so on, and so forth. Before long you've got thousands of lines, which means...
  - It's difficult to commit changes to a profile, because you've got to scroll down to line 10243 to check that that's the change you meant.

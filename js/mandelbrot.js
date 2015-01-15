@@ -33,13 +33,20 @@ var generateMandelbrot = function (
     v = 0,
     w = 0;
 
-  var recalc = function(evt,elem) {
-    console.log(evt.pageY-elem.offsetTop + $('#blog').offset().top);
-    cX -= scale*(2*(evt.pageX-elem.offsetLeft + $('#blog').scrollLeft() - $('#blog').offset().left)/Canvas.width-1);
-    cY -= scale*(2*(evt.pageY - elem.offsetTop + $('#blog').scrollTop() - $('#blog').offset().top)/Canvas.height-1);
-    
-    console.log(cX, cY);
-  }
+    var recalc = function(evt,elem) {
+	cX -= scale*(
+	    (evt.pageX-elem.offsetLeft
+	     + $('#blog').scrollLeft()- $('#blog').offset().left
+	     + $(elem).scrollLeft()-$(elem).offset().left
+	    )*2/Canvas.width - 1
+	);
+	cY -= scale*((evt.pageY - elem.offsetTop
+		      + $('#blog').scrollTop() - $('#blog').offset().top 
+		      + $(elem).scrollTop()-$(elem).offset().top
+		     )*2/Canvas.height-1);
+	
+	console.log(cX, cY);
+    }
   
   Canvas.width=Canvas.height=400;
   generateMandelbrot(Canvas, iter, limit, cX, cY, scale, u, v, w);

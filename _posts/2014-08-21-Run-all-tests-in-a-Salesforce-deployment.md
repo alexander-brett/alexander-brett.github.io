@@ -1,6 +1,6 @@
 ---
 title: Running all tests during a Salesforce.com deployment
-date: 2014-08-21
+tags: [SFDC]
 ---
 
 Salesforce.com deployments to a production environment require all unit tests to

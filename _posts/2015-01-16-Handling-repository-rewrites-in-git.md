@@ -1,6 +1,6 @@
 ---
 title: Handling repository rewrites with git
-date: 2015-01-16
+tags: [Git]
 ---
 
 Let's say you've decided that you need to make a change which changes almost every line in your git repository, for instance if you've realised you've got your line endings all messed up and want to make them uniform. If you're the only developer, or you can close every branch so that you can make your change on one branch only, you're ok. However, if you have dozens of developers working on dozens of branches, you'll come across a problem which is that once you've applied your change, the next time you attempt to merge anything, every single line will come up as a merge conflict in git.

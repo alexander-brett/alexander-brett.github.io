@@ -1,6 +1,6 @@
 ---
 title: The Mandelbrot set in Javascript
-date: 2014-08-29
+tags: []
 ---
 
 A while back I came across a fun puzzle on

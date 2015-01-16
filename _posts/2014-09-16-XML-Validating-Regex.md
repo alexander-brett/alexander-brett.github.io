@@ -1,6 +1,5 @@
 ---
 title: A Regex for validating XML text
-date: 2014-09-16
 ---
 
 I'm currently working on version 3 of a tool to diff XML files in a content-aware manner, viz. to parse nodes and identify where two nodes are different, rather than just apply a string diff to them. A crucial part of that is that the parsing be fast and robust. 

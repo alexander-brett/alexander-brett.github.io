@@ -1,6 +1,6 @@
 ---
 title: How and why to compress your Salesforce.com profiles
-date: 2015-01-15
+tags: [SFDC, Git]
 ---
 
 ## Why compressing your profiles is a good idea

@@ -1,6 +1,6 @@
 ---
 title: How to handle whitespace with Salesforce.com and git
-date: 2015-01-15
+tags: [SFDC, Git]
 ---
 
 A common problem when working in a git repository in a cross-platform environment is end-of-line handling, as testified by the number of stackoverflow questions on the topic! I found that the most useful guide to getting whitespace right in a repository was [github's](https://help.github.com/articles/dealing-with-line-endings/), but that there were some additional concerns when working with Salesforce.com.

@@ -1,6 +1,6 @@
 ---
 title: Writing Salesforce ant deployment tasks using Javascript
-date: 2014-08-19
+tags: [SFDC]
 ---
 
 The Force.com deployment tool is a .jar file defining some extra tasks such as `sf:deploy`

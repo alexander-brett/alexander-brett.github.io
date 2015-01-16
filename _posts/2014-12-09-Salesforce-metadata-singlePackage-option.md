@@ -1,6 +1,6 @@
 ---
 title: The singlePackage option in Salesforce.com metadata deployments
-date: 2014-12-09
+tags: SFDC
 ---
 
 I've been working on a metadata client application for Salesforce.com to completely replace ant, because once you reach a certain level of complexity, ant really doesn't cut it anymore! However, I found that when deploying a large .zip file (130MB of data compressed to 19MB using deflate with compression level 9) my deployments were taking far, far longer than the equivalent ant deployment of the same files.

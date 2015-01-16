@@ -5,3 +5,11 @@ markdown: redcarpet
 
 redcarpet:
   extensions: ['footnotes']
+
+
+defaults:
+ -
+  scope:
+   type: posts
+  values:
+   layout: post

@@ -1,0 +1,14 @@
+---
+---
+
+{% include header.html %}
+    
+<div id="blog">
+  <div class="blog-post expanded noShrink">
+    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+    <h2>{{ page.date | date_to_long_string }}</h2>
+    {{ content }}
+  </div>
+</div>
+
+{% include footer.html %}

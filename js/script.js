@@ -37,7 +37,7 @@ function navigateToLink(href, callback){
 }
 
 function setupLinks(){
-  $(".expanded").removeClass("expanded");
+  $(".expanded:not(.noShrink)").removeClass("expanded");
   
   $(".blog-post").off().click(function(e){
     if(!$(e.target).is(".expander")) $(this).addClass("expanded");

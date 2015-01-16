@@ -8,6 +8,13 @@
     <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
     <h2>{{ page.date | date_to_long_string }}</h2>
     {{ content }}
+    {% if page.tags.size > 0 %}
+      <p>Tags:
+        {% for tag in page.tags %}
+	  <a href="/tags/{{ tag }}/">{{ tag }}</a>
+	{% endfor %}
+      </p>
+    {% endif %}
   </div>
 </div>
 

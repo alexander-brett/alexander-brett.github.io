@@ -27,10 +27,12 @@ function navigateToLink(href, callback){
         .addClass('gallery-expanded')
         .css({"background-image": "url("+href+")"});
     }  else {
-      newDiv = $($(data)[19]).children()[0];
+	newDiv = $(
+	    $(data).filter(function(i,e){return e.id=="content"})
+	)[0];
     }
     transitionContent(newDiv);
-    callback();
+    if (callback) callback();
     highlightLinks();
     setupLinks();
   });

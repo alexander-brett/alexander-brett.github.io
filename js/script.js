@@ -39,21 +39,21 @@ function navigateToLink(href, callback){
 function setupLinks(){
     $(".expanded:not(.noShrink)").removeClass("expanded");
     
-    $(".blog-post").off().click(function(e){
+    $(".blog-post").off("click").click(function(e){
 	if(!$(e.target).is(".expander")) $(this).addClass("expanded");
     });
     
-    $(".expander").off().click(function(e){
+    $(".expander").off("click").click(function(e){
 	$(this).parent().toggleClass("expanded");
     });
     
-    $("a.internal:not(.activeLink)").off().click(function(e){
+    $("a.internal:not(.activeLink)").off("click").click(function(e){
 	var href = $(this).attr('href');
 	navigateToLink(href, function(){history.pushState(null, null, href)});
 	e.preventDefault();
     });
     
-    $("a.activeLink").off().click(function(e){
+    $("a.activeLink").off("click").click(function(e){
 	e.preventDefault();
     });
 }

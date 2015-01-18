@@ -5,13 +5,13 @@
     
 <div id="blog">
   <div class="blog-post expanded noShrink">
-    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+    <h1><a href="{{ page.url }}" class="internal">{{ page.title }}</a></h1>
     <h2>{{ page.date | date_to_long_string }}</h2>
     {{ content }}
     {% if page.tags.size > 0 %}
       <p>Tags:
         {% for tag in page.tags %}
-	  <a href="/tags/{{ tag }}/">{{ tag }}</a>
+	  <a href="/tags/{{ tag }}/" class="internal">{{ tag }}</a>
 	{% endfor %}
       </p>
     {% endif %}

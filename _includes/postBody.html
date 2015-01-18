@@ -1,0 +1,21 @@
+<h1><a href="{{ include.post.url }}" class="internal">
+    {{ include.post.title }}
+</a></h1>
+
+{% if include.post.date != null %}
+  <h2>{{ include.post.date | date_to_long_string }}</h2>
+{% endif %}
+
+{% if content != null and content != ""%}
+  {{ content }}
+{% else %}
+  {{ include.post.content }}
+{% endif %}
+
+{% if include.post.tags.size > 0 %}
+  <p>Tags:
+    {% for tag in include.post.tags %}
+      <a href="/tags/{{ tag }}/" class="internal">{{ tag }}</a>
+    {% endfor %}
+  </p>
+{% endif %}

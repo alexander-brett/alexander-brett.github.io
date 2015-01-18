@@ -17,6 +17,7 @@ $dgrey: #202020
 @mixin scrollbar()
   overflow-y: scroll
   height: 100%
+  -webkit-overflow-scrolling: touch
   &::-webkit-scrollbar
     width: 8px
     background-color: rgba(0,0,0,0)
@@ -32,6 +33,9 @@ $dgrey: #202020
       &:active
         background: rgba(0,0,0,0.61)
         -webkit-border-radius: 100px
+
+@mixin shadow()
+  box-shadow: 0.1em 0.2em 0.5em 0.1em rgba(0, 0, 0, 0.26)
 
 .light
   color: #555555
@@ -105,7 +109,7 @@ header
   z-index: 11
   height: 15em
   width: 100%
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26)
+  @include shadow()
   h1
     white-space: nowrap
     font-size: 5em
@@ -164,7 +168,7 @@ header
       transition: 0.5s
       transition-timing-function: cubic-bezier(0,1,0.5,1)
       overflow-y: hidden
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26)
+      @include shadow()
       padding: 1em
       .fade
         position: absolute
@@ -199,7 +203,7 @@ header
         height: 28vw
         margin: 1vw
         float: left
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26)
+        @include shadow()
         z-index: 1
         background: #fff
         overflow: hidden

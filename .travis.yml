@@ -11,6 +11,7 @@ install:
   - gem install html-proofer
 
 script:
+  - set -e
   - jekyll build
   - cd _site
   - htmlproof .

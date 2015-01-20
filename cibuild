@@ -1,0 +1,8 @@
+!#/usr/bin/bash
+
+set -e
+gem install github-pages
+brew install ncftp
+jekyll build
+cd _site
+ncftpput -u $USER -p $PASS -R $SITE /public_html/ ./

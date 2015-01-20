@@ -3,7 +3,7 @@ language: ruby
 rvm: [2.1]
 
 branches:
-  only: ['master']
+  only: ['published']
 
 install:
   - sudo apt-get install ncftp

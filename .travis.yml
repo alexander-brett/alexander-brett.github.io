@@ -1,8 +1,18 @@
 language: ruby
+
 rvm: [2.1]
-script: ./cibuild
+
 branches:
   only: ['master']
+
+install:
+  - sudo gem install github-pages
+  - sudo apt-get install ncftp
+
+script:
+  - jekyll build
+  - cd _site
+  - ncftpput -u $USER -p $PASS -R $SITE /public_html/ ./
 
 env:
   global:

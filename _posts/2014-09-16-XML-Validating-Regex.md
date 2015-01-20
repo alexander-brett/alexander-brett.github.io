@@ -72,4 +72,4 @@ m{
 }xs
 ~~~
 
-It happens that although this regex is a way of extracting data from an XML node, it also only matches valid XML, in a speedy way. You can see it in anger as an XML parser in [Node.pm](https://github.com/alexander-brett/xmlDiff.pm/blob/master/xmlDiff/Node.pm).
+It happens that although this regex is a way of extracting data from an XML node, it also only matches valid XML, in a speedy way.

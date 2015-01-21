@@ -86,7 +86,7 @@ WWW::SFDC::Zip::makezip(
 
 One final element of note is that `WWW::SFDC::Zip::unzip` accepts an optional third parameter: a function reference, applied to each file retrieved before being written to disk. I use this to achieve profile compression (see my recent post on that topic) like this:
 
-```
+```perl
 sub _compressProfile {
   my $content = shift;
   my @lines = split /^/, $content;

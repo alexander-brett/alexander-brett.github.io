@@ -30,9 +30,38 @@ $dgrey: #202020
         background: rgba(0,0,0,0.61)
         -webkit-border-radius: 100px
 
+@mixin Xscrollbar()
+  overflow-x: scroll
+  width: 100%
+  -webkit-overflow-scrolling: touch
+  &::-webkit-scrollbar
+    height: 8px
+    background-color: rgba(0,0,0,0)
+    -webkit-border-radius: 100px
+    &:hover
+      background-color: rgba(0, 0, 0, 0.09)
+    &:vertical
+      display: none
+  &::-webkit-scrollbar-thumb
+    &:horizontal
+      background: rgba(0,0,0,0.5)
+      -webkit-border-radius: 100px
+      &:active
+        background: rgba(0,0,0,0.61)
+        -webkit-border-radius: 100px
+  
+
 @mixin shadow()
   box-shadow: 0.1em 0.2em 0.5em 0.1em rgba(0, 0, 0, 0.26)
 
+.highlight
+  @include shadow()
+  width: 90%
+  margin: auto
+  pre
+    @include Xscrollbar()
+
+    
 .light
   color: #555555
   background: $lgrey
@@ -44,6 +73,9 @@ $dgrey: #202020
     color: #909090
     &:hover, &.activeLink
       color: $dgrey
+  pre
+    background-color: white
+
 
 .dark
   color: #909090

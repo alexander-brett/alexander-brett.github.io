@@ -1,6 +1,13 @@
 <html>
   <head>
-    <title>Alexander Brett</title>
+    <title>
+      Alexander Brett
+      {% if page.title %}
+      &nbsp;|&nbsp;{{page.title}}
+      {% elsif page.currentTag %}
+      &nbsp;|&nbsp;{{page.currentTag}}
+      {% endif %}
+    </title>
     <meta name="author" content="Alexander Brett">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -19,7 +26,7 @@
       </a>
       <ul>
         <li>
-          <a class="internal" href="/index.html">Code</a>
+          <a class="internal" href="/">Code</a>
         </li>
         <li>
           <a class="internal" href="/photo.html">Photo</a>

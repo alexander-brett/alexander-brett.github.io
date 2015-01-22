@@ -3,10 +3,10 @@ galleries:
   #- cover: 30.jpg
   #  title: catz
   - cover: 19.jpg
-    title: esther
-  - title: coe
+    path: esther
+  - path: coe
     cover: 15.jpg
-  - title: mm
+  - path: mm
     cover: 2.jpg
 ---
 
@@ -15,8 +15,8 @@ galleries:
   <div id="photo" class="gallery">
     <div class="tiles">
       {% for gallery in page.galleries %}
-        <div class="photo-container" style="background-image: url('/img/{{ gallery.title }}/{{ gallery.cover }}')">
-          <a  class="internal" href="/galleries/{{ gallery.title }}.html"></a>
+        <div class="photo-container" style="background-image: url('/img/{{ gallery.path }}/{{ gallery.cover }}')">
+          <a  class="internal" href="/galleries/{{ gallery.path }}.html"></a>
         </div>
       {% endfor %}
     </div>

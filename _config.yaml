@@ -21,7 +21,7 @@ defaults:
   scope:
    path: tags
   values:
-   layout: default
+   layout: tag
  -
   scope:
    path: galleries

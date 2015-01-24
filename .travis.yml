@@ -2,9 +2,6 @@ language: ruby
 
 rvm: [2.1]
 
-branches:
-  only: ['published']
-
 install:
   - sudo apt-get install ncftp
   - gem install github-pages
@@ -15,7 +12,7 @@ script:
   - jekyll build
   - cd _site
   - htmlproof .
-  - ncftpput -u $USER -p $PASS -R $SITE /public_html/ ./
+  - if [ "$TRAVIS_BRANCH" == "published" ] && ["$TRAVIS_PULL_REQUEST" != "false"] then ncftpput -u $USER -p $PASS -R $SITE /public_html/ ./ fi
 
 env:
   global:

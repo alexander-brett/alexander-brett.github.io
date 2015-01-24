@@ -8,6 +8,9 @@ redcarpet:
 
 exclude: ['vendor']
 
+paginate: 6
+paginate_path: /page:num/
+
 defaults:
  -
   scope:

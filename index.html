@@ -1,3 +1,28 @@
 ---
-layout: default
 ---
+
+{% include header.html %}
+
+<div id="blog">
+  {% for post in paginator.posts %}
+    <div class="blog-post expanded">
+      <span class="expander">&#9654;</span>
+      <div class="fade"></div>
+      {% include postBody.html post=post %}
+    </div>
+  {% endfor %}
+  
+  <!-- Pagination links -->
+  <div class="pagination">
+    {% for number in (2..paginator.total_pages) reversed %}
+      <a href="/page{{number}}/"
+         class="internal{% if paginator.page == number %} activeLink{% endif %}"
+      ></a>
+    {% endfor %}
+    <a href="/"
+       class="internal{% if paginator.page == 1 %} activeLink{% endif %}"
+    ></a>
+  </div>
+</div>
+
+{% include footer.html %}

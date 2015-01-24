@@ -220,6 +220,17 @@ header
         .expander
           transform: rotate(90deg)
           color: #922
+    .pagination
+      text-align: center
+      a
+        margin: 1em
+        border-radius: 50%
+        display: inline-block
+        border: 1em solid rgba(0,0,0,0.4)
+        transition: 0.5s
+        &.activeLink, &:hover
+          border: 1em solid rgba(0,0,0,0.9)
+    
   .gallery
     @extend #contentDiv
     @include scrollbar()

@@ -8,11 +8,12 @@ install:
   - gem install html-proofer
 
 script:
-  - set -e
   - jekyll build
   - cd _site
   - htmlproof .
-  - if [ "$TRAVIS_BRANCH" == "published" ] && ["$TRAVIS_PULL_REQUEST" != "false"] then ncftpput -u $USER -p $PASS -R $SITE /public_html/ ./ fi
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "published" ] && ["$TRAVIS_PULL_REQUEST" != "false"]; then ncftpput -u $USER -p $PASS -R $SITE /public_html/ ./; fi
 
 env:
   global:

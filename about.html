@@ -1,0 +1,15 @@
+---
+---
+
+{% include header.html %}
+
+<div id="blog">
+
+  {% for item in site.about %}
+  <div class="blog-post expanded noShrink">
+    {% include postBody.html post=item %}
+  </div>
+  {% endfor %}
+</div>
+
+{% include footer.html %}

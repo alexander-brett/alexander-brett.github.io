@@ -28,6 +28,9 @@ defaults:
   values:
    layout: gallery
 
+collections:
+ - about
+
 galleries:
  catz:
   title: St. Catherine's College

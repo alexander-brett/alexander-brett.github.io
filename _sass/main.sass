@@ -1,4 +1,5 @@
 $lgrey: #fbfbfb
+$mgrey: #909090
 $dgrey: #202020
 
 @mixin fade()
@@ -68,9 +69,9 @@ $dgrey: #202020
   header
     background-color: $lgrey
   .divider
-    border-color: #909090
+    border-color: $mgrey
   a
-    color: #909090
+    color: $mgrey
     &:hover, &.activeLink
       color: $dgrey
   pre
@@ -78,7 +79,7 @@ $dgrey: #202020
 
 
 .dark
-  color: #909090
+  color: $mgrey
   background: $dgrey
   .divider
     border-color: #555555
@@ -220,6 +221,17 @@ header
         .expander
           transform: rotate(90deg)
           color: #922
+    .pagination
+      text-align: center
+      a
+        margin: 1em
+        border-radius: 50%
+        display: inline-block
+        border: 1em solid $mgrey
+        transition: 0.5s
+        &.activeLink, &:hover
+          border: 1em solid $dgrey
+    
   .gallery
     @extend #contentDiv
     @include scrollbar()

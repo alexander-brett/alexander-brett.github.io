@@ -2,10 +2,12 @@
 ---
 
 {% include header.html %}
-    
+
+{% assign tag = (page.path | replace: "/index.html", "" | split: "/" | last) %}
+
   <div id="blog">
     {% for post in site.posts %}
-     {% if page.currentTag == null or post.tags contains page.currentTag %}
+     {% if post.tags contains tag %}
       <div class="blog-post expanded">
         <span class="expander">&#9654;</span>
 	<div class="fade"></div>

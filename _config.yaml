@@ -8,9 +8,62 @@ redcarpet:
 
 exclude: ['vendor']
 
+paginate: 6
+paginate_path: /page:num/
+
 defaults:
  -
   scope:
    type: posts
   values:
    layout: post
+ -
+  scope:
+   path: tags
+  values:
+   layout: tag
+ -
+  scope:
+   path: galleries
+  values:
+   layout: gallery
+
+collections:
+ - about
+
+galleries:
+ catz:
+  title: St. Catherine's College
+  photos:
+   - 30.jpg
+   - 21.jpg
+   - 27.jpg
+ mm:
+  title: Marvellous Medicine
+  photos:
+   - 2.jpg
+   - 1.jpg
+   - 10.jpg
+   - 17.jpg
+   - 18.jpg
+   - 12.jpg
+   - 14.jpg
+   - 15.jpg
+   - 4.jpg
+   - 5.jpg
+   - 7.jpg
+   - 21.jpg
+   - 34.jpg
+   - 30.jpg
+ coe:
+  title: Comedy of Errors
+  photos:
+   - 15.jpg
+   - 13.jpg
+   - 28.jpg
+   - 17.jpg
+   - 20.jpg
+   - 26.jpg
+   - 08.jpg
+   - 31.jpg
+   - 05.jpg

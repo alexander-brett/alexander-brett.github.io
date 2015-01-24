@@ -17,3 +17,13 @@ defaults:
    type: posts
   values:
    layout: post
+ -
+  scope:
+   path: tags
+  values:
+   layout: default
+ -
+  scope:
+   path: galleries
+  values:
+   layout: gallery

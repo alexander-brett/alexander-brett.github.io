@@ -59,6 +59,11 @@ $dgrey: #202020
   @include shadow()
   width: 90%
   margin: auto
+  white-space: pre
+  -moz-border-radius: 1em
+  -webkit-border-radius: 1em
+  border-radius: 1em
+  padding: 2em
   pre
     @include Xscrollbar()
 
@@ -74,8 +79,8 @@ $dgrey: #202020
     color: $mgrey
     &:hover, &.activeLink
       color: $dgrey
-  pre
-    background-color: white
+  //pre
+  //  background-color: white
 
 
 .dark
@@ -119,6 +124,9 @@ h2
 h3
   font-family: RalewayBold
   font-weight: Normal
+
+code
+  font-family: Inconsolata, monospace
 
 a
   text-decoration: none

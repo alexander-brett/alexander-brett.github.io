@@ -1,6 +1,6 @@
 ---
 title: Running unit tests using WWW::SFDC
-tags: [SFDC, perl]
+tags: [SFDC, Perl]
 ---
 
 This post is going to start basic and get gradually more complicated - I suggest that you stop once you've satisfied your own requirements! The basic premise is that, in order to keep a consistantly high-quality and deployable set of metadata, we keep a Salesforce.com org up to date with a branch, and nightly (or more often) we run every unit test against it. This makes sure that, even though developers are keeping abreast of the effects their changes have on other parts of the code base and so on, there is one extra highly visible and reportable checksum on quality.

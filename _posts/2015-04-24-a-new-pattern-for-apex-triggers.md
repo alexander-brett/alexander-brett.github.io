@@ -342,3 +342,5 @@ Again, you could achieve powerful and flexible logging of trigger operations acr
 ## Summary
 
 Most of the apex code I've seen fails to leverage even simple object-oriented concepts such as inheritance, but making use them can lead to elegant and powerful designs which save effort and increase maintainability. Give it a try!
+
+Have I got something wrong? [Propose an edit to this page on GitHub](https://github.com/alexander-brett/alexander-brett.github.io/blob/master/_posts/2015-04-24-a-new-pattern-for-apex-triggers.md).

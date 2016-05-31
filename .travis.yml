@@ -10,7 +10,7 @@ install:
 script:
   - jekyll build
   - cd _site
-  - htmlproof .
+  - htmlproofer .
 
 after_success:
   - if [ "$TRAVIS_BRANCH" == "published" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ncftpput -u $USER -p $PASS -R $SITE /public_html/ ./; fi

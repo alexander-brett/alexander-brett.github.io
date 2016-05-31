@@ -15,7 +15,7 @@ document.body.appendChild(V=document.createElement('Canvas'));j=(D=(X=V.getConte
 
 And here's the output:
 
-![The codegolf version](/img/blog/mandelbrot_codegolf.png)
+![The codegolf version](/res/img/blog/mandelbrot_codegolf.png)
 
 I've indented the code made the variables more verbose, and added some comments:
 
@@ -62,7 +62,7 @@ different parameters that I thought it'd be good to share it - for more in-depth
 tweaking, try [this version](http://jsfiddle.net/ali0sha/7Jjex/1/).
 
 <canvas id="mandelbrotCanvas"></canvas>
-<script src="/js/mandelbrot.js"></script>
+<script src="/res/js/mandelbrot.js"></script>
 
 ~~~js
 var generateMandelbrot = function (

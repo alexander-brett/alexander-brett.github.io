@@ -12,11 +12,8 @@
   <h2>{{ include.post.date | date_to_long_string }}</h2>
 {% endif %}
 
-{% if content != null and content != ""%}
-  {{ content }}
-{% else %}
+
   {{ include.post.content }}
-{% endif %}
 
 {% if include.post.tags.size > 0 %}
   <p>Tags:

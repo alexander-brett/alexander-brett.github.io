@@ -1,7 +1,12 @@
 safe: true
 lsi: false
-highlighter: pygments
-markdown: redcarpet
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+gems:
+  - jekyll-coffeescript
+  - jekyll-paginate
 
 redcarpet:
   extensions: ['footnotes']

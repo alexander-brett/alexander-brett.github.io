@@ -17,7 +17,7 @@ The idea behind PerlApp is pretty straightforward: you point it at a script, and
 
 Of course, when you do this and run the resulting executable, there are some modules missing - it's hard to detect all of the prerequisites, especially when they're being dynamically loaded in. Examples of this are that [WWW::SFDC](http://search.cpan.org/~abrett/WWW-SFDC/lib/WWW/SFDC.pm) loads in modules by running:
 
-```perl
+``` perl
 for my $module (qw'
     Apex Constants Metadata Partner Tooling
 '){
@@ -34,7 +34,7 @@ for my $module (qw'
 
 In a similar way, when you create a screen appender for [Log::Log4perl](http://search.cpan.org/~mschilli/Log-Log4perl-1.46/lib/Log/Log4perl.pm) , it quietly loads in Log::Log4perl::Appender::Screen. To fix this sort of issue, we add a few more arguments to perlapp:
 
-```bat
+``` shell
 perlapp  --add MooX::Options::Role^
  --add App::SFDC::Role::^
  --add Log::Log4perl::Appender::Screen^
@@ -153,7 +153,7 @@ __END__
 
 Using `perl -x` in a batch file, we can combine the perl script-writing script and the call to PerlApp into one easy-to-digest package, by using some syntax like:
 
-```bat
+``` shell
 perl -x %0 > static_SFDC.pl
 
 perlapp ^

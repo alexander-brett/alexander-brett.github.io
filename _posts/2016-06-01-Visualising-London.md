@@ -5,7 +5,7 @@ tags: []
 
 I recently started working on a couple of interesting data-visualisation projects at work, which lead me to researching visualisation libraries, watching [this video](https://www.youtube.com/watch?v=Mucmb33711A), and thinking that it would be cool to do something like that for London.
 
-Happily, [data.london.gov.uk](https://data.london.gov.uk) exists and has a bizarrely good selection of datasets, so I threw together the following visualisation tool to provide a little window into the state of London, ward-by-ward.
+Happily, [data.london.gov.uk](http://data.london.gov.uk) exists and has a bizarrely good selection of datasets, so I threw together the following visualisation tool to provide a little window into the state of London, ward-by-ward.
 
 <div id="london-vis">
   <link rel="stylesheet" href="/res/london-vis/london-vis.css" />

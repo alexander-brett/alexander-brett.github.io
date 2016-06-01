@@ -9,6 +9,20 @@ function londonvis () {
     .attr("width", width)
     .attr("height", height);
 
+  function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  function numberToPercent(x) {
+    return x.toFixed(1).toString() + '%';
+  }
+
+  var colourScales = {
+    purpleGreen: function(n){return d3.rgb(n,255-n, n);},
+    turquoise: function(n){return d3.rgb(0,n, n)},
+    blackToWhite: function(n){return d3.rgb(n,n,n)}
+  };
+
   function makeOptions(database){
 
     var options = this;
@@ -23,15 +37,15 @@ function londonvis () {
         var min = query[0].values[0][1];
         var max = query[0].values[0][0];
         var convert = d3.scale.sqrt().domain([0,fix(max)]).range([0,size*scale]);
-        this.caption = function(i){return values[i] + label};
+        this.caption = function(i){return label(values[i])};
         this.radius = function(i){
           return convert(fix(values[i]))
         };
         this.key = [{
-          caption: min + label,
+          caption: label(min),
           radius: convert(fix(min))
         },{
-          caption: max + label,
+          caption: label(max),
           radius: convert(fix(max))
         }];
         return this;
@@ -40,7 +54,7 @@ function londonvis () {
       return result;
     }
 
-    function radiusWithYears(table, column, size, db, sourceInfo){
+    function radiusWithYears(table, column, size, db, sourceInfo, label){
       var query = db.exec("SELECT DISTINCT year FROM "+table+" ORDER BY year DESC");
       var availableYears =  query[0].values.map(function(d){ return d[0]});
       function doMakeRadius(){
@@ -52,15 +66,15 @@ function londonvis () {
         var min = query[0].values[0][1];
         var max = query[0].values[0][0];
         var convert = d3.scale.sqrt().domain([0,fix(max)]).range([0,size*scale]);
-        this.caption = function(i){return values[i]};
+        this.caption = function(i){return label(values[i])};
         this.radius = function(i){
           return convert(fix(values[i]))
         };
         this.key = [{
-          caption: min,
+          caption: label(min),
           radius: convert(fix(min))
         },{
-          caption: max,
+          caption: label(max),
           radius: convert(fix(max))
         }];
         return this;
@@ -79,11 +93,20 @@ function londonvis () {
     var radiusMap = {
         //"Number of jobs in area - 2013": radiusFromPropertySqrt('Jobs', 'Jobs', 7),
         //"In employment (16-64) - 2011": radiusFromPropertyLinear('Employed', 'Employed', 3.2),
-        "Area (sq. km)": radiusFromProperty("area", "area", "sq. km", 6.2, "Area calculated by GLA using GIS boundary files from Ordnance Survey"),
-        "Mayoral election 2016 total turnout size": radiusFromProperty("voting", "turnout", " voters", 2.5, "<a href='http://data.london.gov.uk/elections'>London Elects</a>"),
-        "Mayoral election 2016 registered voters": radiusFromProperty("voting", "electorate", " voters", 2.2, "<a href='http://data.london.gov.uk/elections'>London Elects</a>"),
-        "Population estimates & projections": radiusWithYears("population", "population", 3.2, database, "<a href='http://data.london.gov.uk/datastore/applications/custom-age-tool-gla-population-projections-ward'>GLA SHLAA Trend based Population Projection data, released in March 2013.</a>"),
-        "Median House Price (£)": radiusWithYears('median_house_price', 'price', 3.7, database, "The Land Registry publish full postcode price paid data on their website. Using this data, the GLA have calculated approximate average house prices."),
+        "Area (sq. km)": radiusFromProperty("area", "area", function(d){return d+"sq. km"}, 6.2, "Area calculated by GLA using GIS boundary files from Ordnance Survey"),
+        "Mayoral election 2016 total turnout size": radiusFromProperty("voting", "turnout", function(d){return numberWithCommas(d) + ' voters'}, 2.5, "<a href='http://data.london.gov.uk/elections'>London Elects</a>"),
+        "Mean household income (modelled)": radiusFromProperty("mean_income", "income", function(d){return '£' + numberWithCommas(d)}, 2.7, "Modelled gross annual household income (experimental), 2011/12 <a href='http://data.london.gov.uk/dataset/household-income-estimates-small-areas'>GLA Estimates</a>"),
+        "Mayoral election 2016 registered voters": radiusFromProperty("voting", "electorate", function(d){return numberWithCommas(d) + ' voters'}, 2.2, "<a href='http://data.london.gov.uk/elections'>London Elects</a>"),
+        "Population estimates & projections": radiusWithYears(
+          "population", "population", 3.2, database,
+          "<a href='http://data.london.gov.uk/datastore/applications/custom-age-tool-gla-population-projections-ward'>GLA SHLAA Trend based Population Projection data, released in March 2013.</a>",
+          function(d){return numberWithCommas(d) + ' people'}
+        ),
+        "Median House Price (£)": radiusWithYears(
+          'median_house_price', 'price', 3.7, database,
+          "The Land Registry publish full postcode price paid data on their website. Using this data, the GLA have calculated approximate average house prices.",
+          function(d){return '£' + numberWithCommas(d)}
+        ),
       };
 
     var sizeInputs = d3.select('#london-vis').append('fieldset').attr('id', 'sizeInput');
@@ -130,7 +153,7 @@ function londonvis () {
       }
     }
 
-     function colourWithYears(table, column, size, db, sourceInfo){
+     function colourWithYears(table, column, db, sourceInfo, label, colourScheme){
       var query = db.exec("SELECT DISTINCT year FROM "+table+" ORDER BY year DESC");
       var availableYears =  query[0].values.map(function(d){ return d[0]});
       function doMakeRadius(){
@@ -144,17 +167,17 @@ function londonvis () {
         var convert = d3.scale.sqrt().domain([fix(min),fix(max)]).range([230,20]);
         function makeColour (value){
           var n = convert(fix(value));
-          return d3.rgb(n,255-n, n);
+          return colourScheme(n);
         }
-        this.caption = function(i){return values[i]};
+        this.caption = function(i){return label(values[i])};
         this.colour = function(i){
           return makeColour(values[i])
         };
         this.key = [{
-          caption: min,
+          caption: label(min),
           colour: makeColour(min)
         },{
-          caption: max,
+          caption: label(max),
           colour: makeColour(max)
         }];
         return this;
@@ -169,7 +192,7 @@ function londonvis () {
       return doMakeRadius;
     }
 
-    function colourFromGenericPercent(table, column, sourceInfo){
+    function colourFromGenericPercent(table, column, sourceInfo, label, colourScheme){
       var result =  function(db){
         var query = db.exec(
           "SELECT max("+column+"), min("+column+") FROM "+table+";"
@@ -181,17 +204,17 @@ function londonvis () {
         var convert = d3.scale.linear().domain([fix(min),fix(max)]).range([230,20]);
         function makeColour (value){
           var n = convert(fix(value));
-          return d3.rgb(0,n, n);
+          return colourScheme(n);
         }
-        this.caption = function(i){return values[i]};
+        this.caption = function(i){return label(values[i])};
         this.colour = function(i){
           return makeColour(values[i])
         };
         this.key = [{
-          caption: min,
+          caption: label(min),
           colour: makeColour(min)
         },{
-          caption: max,
+          caption: label(max),
           colour: makeColour(max)
         }];
         return this;
@@ -201,23 +224,26 @@ function londonvis () {
     }
 
     var colourMap = {
-        //"% Households Social Rented - 2011": colourFromGenericPercent('Social housing', 'Social_house_percent'),
         //"% BAME - 2011": colourFromGenericPercent('BAME Population', 'BAME_percent'),
-        //"Employment rate (16-64) - 2011": colourFromGenericPercent('Employment rate', 'Employment_rate'),
         //"% Flat, maisonette or apartment - 2011": colourFromGenericPercent('Apartments', 'Apartment_percent'),
         //'Claimant rate of key out-of-work benefits (working age client group) (2014)': colourFromGenericPercent('OOW Benefits Recipients', 'Out_of_work_benefints_percent'),
         "Borough": colourFromBorough(),
         "Proportion of social rented housing": colourWithYears(
           'housing',
           'social*100.0/(social + owned + mortgage + private_rent + other)',
-          4,
           database,
-          "Census data"
+          "Census data",
+          numberToPercent,
+          colourScales.purpleGreen
         ),
+        "Unemployment": colourWithYears('unemployment','unemployed*100.0/employable',database,"Census data",numberToPercent, colourScales.turquoise),
         "Mayoral election 2016 result": colourFromMayor("<a href='http://data.london.gov.uk/elections'>London Elects</a>"),
-        "Mayoral election 2016 percentage turnout": colourFromGenericPercent('voting', 'percent_turnout', "<a href='http://data.london.gov.uk/elections'>London Elects</a>"),
-        "Population density (with projections)": colourWithYears('population_density', 'density', 4, database,
-          "<a href='http://data.london.gov.uk/datastore/applications/custom-age-tool-gla-population-projections-ward'>GLA SHLAA Trend based Population Projection data, released in March 2013.</a>")
+        "Mayoral election 2016 percentage turnout": colourFromGenericPercent('voting', 'percent_turnout', "<a href='http://data.london.gov.uk/elections'>London Elects</a>",function(d){return d}, colourScales.purpleGreen),
+        "Population density (with projections)": colourWithYears('population_density', 'density', database,
+          "<a href='http://data.london.gov.uk/datastore/applications/custom-age-tool-gla-population-projections-ward'>GLA SHLAA Trend based Population Projection data, released in March 2013.</a>",
+          function(d){return numberWithCommas(d) + ' people/sq. km'},
+            colourScales.blackToWhite
+        )
       };
 
     this.makeColour = function(db){

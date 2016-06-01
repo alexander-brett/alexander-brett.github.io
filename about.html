@@ -4,6 +4,7 @@
 {% include header.html %}
 
 <div id="blog">
+  <div id="headerPadding"> </div>
   {% for item in site.about %}
   <div class="blog-post expanded noShrink">
     {% include postBody.html post=item noLink=true %}

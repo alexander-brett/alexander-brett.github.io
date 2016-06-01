@@ -4,10 +4,11 @@
 {% assign gallery = site.galleries[key] %}
 
   <div id="gallery" class="gallery">
+    <div id="headerPadding"> </div>
     <a class="back internal" href="/photo.html">&#9664;</a>
     <div class="tiles">
       {% for photo in gallery.photos %}
-        <div class="photo-container gallery-item" style="background-image: url('/img/{{ key }}/{{ photo }}')">
+        <div class="photo-container gallery-item" style="background-image: url('/res/img/{{ key }}/{{ photo }}')">
           <a  class="internal" href="/res/img/{{ key }}/{{ photo }}"></a>
         </div>
       {% endfor %}

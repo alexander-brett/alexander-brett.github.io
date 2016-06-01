@@ -1,0 +1,56 @@
+---
+---
+
+@import "colours"
+
+#london-vis
+  position: relative
+  display: inline-block
+
+  .overlay
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+    background: rgba(0,0,0,0.1)
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    .clickme
+      background: rgba(0,0,0,0.8)
+      color: $lgrey
+      font-size: 40
+      text-transform: uppercase
+      padding: 3px
+      border-radius: 5px
+
+  #sizeInput, #colourInput
+    float: left
+    width: 44%
+
+  input[type=radio]
+    display: none
+
+  input ~ label div
+    display: none
+
+  input:checked ~ label div
+    display: block
+
+  fieldset, input:checked ~ label
+    border: 2px solid $dgrey
+    border-radius: 3px
+
+  fieldset
+    padding: 4px
+    span
+      display: inline-block
+
+  label
+    display: block
+    border: 2px solid $mgrey
+    border-radius: 3px
+    padding: 2px
+    margin: 2px

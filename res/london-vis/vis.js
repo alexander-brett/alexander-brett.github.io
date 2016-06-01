@@ -95,7 +95,7 @@ function londonvis () {
         //"In employment (16-64) - 2011": radiusFromPropertyLinear('Employed', 'Employed', 3.2),
         "Area (sq. km)": radiusFromProperty("area", "area", function(d){return d+"sq. km"}, 6.2, "Area calculated by GLA using GIS boundary files from Ordnance Survey"),
         "Mayoral election 2016 total turnout size": radiusFromProperty("voting", "turnout", function(d){return numberWithCommas(d) + ' voters'}, 2.5, "<a href='http://data.london.gov.uk/elections'>London Elects</a>"),
-        "Mean household income (modelled)": radiusFromProperty("mean_income", "income", function(d){return '£' + numberWithCommas(d)}, 2.7, "Modelled gross annual household income (experimental), 2011/12 <a href='http://data.london.gov.uk/dataset/household-income-estimates-small-areas'>GLA Estimates</a>"),
+        "Mean household income (2011/12)": radiusFromProperty("mean_income", "income", function(d){return '£' + numberWithCommas(d)}, 2.7, "Modelled gross annual household income (experimental), 2011/12 <a href='http://data.london.gov.uk/dataset/household-income-estimates-small-areas'>GLA Estimates</a>"),
         "Mayoral election 2016 registered voters": radiusFromProperty("voting", "electorate", function(d){return numberWithCommas(d) + ' voters'}, 2.2, "<a href='http://data.london.gov.uk/elections'>London Elects</a>"),
         "Population estimates & projections": radiusWithYears(
           "population", "population", 3.2, database,
@@ -236,6 +236,7 @@ function londonvis () {
           numberToPercent,
           colourScales.purpleGreen
         ),
+        "Proportion of BAME inhabitants (2011)": colourFromGenericPercent('ethnicity', 'white*100.0/(white+black+asian+other+mixed)', "Census 2011 data",numberToPercent, function(n){return d3.rgb(n, 255-n, 255-n)}),
         "Unemployment": colourWithYears('unemployment','unemployed*100.0/employable',database,"Census data",numberToPercent, colourScales.turquoise),
         "Mayoral election 2016 result": colourFromMayor("<a href='http://data.london.gov.uk/elections'>London Elects</a>"),
         "Mayoral election 2016 percentage turnout": colourFromGenericPercent('voting', 'percent_turnout', "<a href='http://data.london.gov.uk/elections'>London Elects</a>",function(d){return d}, colourScales.purpleGreen),

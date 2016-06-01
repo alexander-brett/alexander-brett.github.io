@@ -1298,7 +1298,7 @@ I'm also aware that every act of communication exposes the author's biases and c
 
 <img src="/res/london-vis/prices_linear_scale.PNG" alt="Prices, scaled linearly" style="width:40%;float:left"/>
 <img src="/res/london-vis/prices_sqrt_scale.PNG" alt="Prices, scaled by square root" style="width:40%;float:left"/>
-<div style="clear:both"/>
+<div style="clear:both"> </div>
 
 Similarly, choosing which colours to use to present data about ethnic minority population or socially rented housing could appear to make value judgements about the data presented - for instance, does red signify high or low or good or bad?
 

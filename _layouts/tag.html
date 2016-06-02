@@ -6,6 +6,7 @@
 {% assign tag = (page.path | replace: "/index.html", "" | split: "/" | last) %}
 
   <div id="blog">
+    <div id="headerPadding"> </div>
     {% for post in site.posts %}
      {% if post.tags contains tag %}
       <div class="blog-post expanded">

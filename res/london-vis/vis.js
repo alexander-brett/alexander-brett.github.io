@@ -56,11 +56,11 @@ function londonvis () {
 
     function radiusWithYears(table, column, size, db, sourceInfo, label){
       var query = db.exec("SELECT DISTINCT year FROM "+table+" ORDER BY year DESC");
-      var availableYears =  query[0].values.map(function(d){ return d[0]});
+      var availableYears =  query[0].values.map(function(d){ return d[0];});
       function doMakeRadius(){
          var query = db.exec(
-          "SELECT max("+column+"), min("+column+") FROM "+table+";"
-          + "SELECT "+column+" FROM "+table+" WHERE year="+doMakeRadius.year+" ORDER BY id ASC;"
+          "SELECT max("+column+"), min("+column+") FROM "+table+" WHERE "+column+" != 'n/a';"
+          + "SELECT "+column+" FROM "+table+" WHERE year="+ (/[^0-9]/.exec(doMakeRadius.year) ? "'" +doMakeRadius.year+ "'": doMakeRadius.year)+" ORDER BY id ASC;"
         );
         var values = query[1].values.map(function(d){return d[0]});
         var min = query[0].values[0][1];
@@ -86,7 +86,7 @@ function londonvis () {
           doMakeRadius.year = d
           }}
       });
-      doMakeRadius.year = availableYears.filter(function(y){return y<=2016})[0];
+      doMakeRadius.year = availableYears.filter(function(y){return y<=2016})[0] || availableYears[0];
       return doMakeRadius;
     }
 
@@ -107,6 +107,11 @@ function londonvis () {
           "The Land Registry publish full postcode price paid data on their website. Using this data, the GLA have calculated approximate average house prices.",
           function(d){return '£' + numberWithCommas(d)}
         ),
+        "Crimes committed": radiusWithYears(
+          'crime', 'crime', 5, database,
+          "Crime data is taken from <a href='https://lass.london.gov.uk/lass/'>the LASS site</a> for crime analysts. The rate is per thousand population. Ward data cannot be aggregated to give a borough or London total. This is because a small percentage (less than 5%) of crimes in this dataset have not been geocoded to a ward. Therefore total numbers and rates are indicative only, and are not an exact measure at ward level. The date displayed is the financial year. The London figure only includes the Met Police area, not the City of London.",
+          function(d){return numberWithCommas(d) + ' crimes'}
+        )
       };
 
     var sizeInputs = d3.select('#london-vis').append('fieldset').attr('id', 'sizeInput');
@@ -236,7 +241,11 @@ function londonvis () {
           numberToPercent,
           colourScales.purpleGreen
         ),
-        "Proportion of BAME inhabitants (2011)": colourFromGenericPercent('ethnicity', 'white*100.0/(white+black+asian+other+mixed)', "Census 2011 data",numberToPercent, function(n){return d3.rgb(n, 255-n, 255-n)}),
+        "Proportion of elderly inhabitants (2013)": colourFromGenericPercent('ages', 'elderly',
+          "<a href='http://data.london.gov.uk/datastore/applications/custom-age-tool-gla-population-projections-ward'>GLA SHLAA Trend based Population Projection data, released in March 2013.</a>",
+          numberToPercent,  function(n){return d3.rgb(255-n, n, n)}
+        ),
+        "Proportion of white inhabitants (2011)": colourFromGenericPercent('ethnicity', 'white*100.0/(white+black+asian+other+mixed)', "Census 2011 data",numberToPercent, function(n){return d3.rgb(255-n, n, n)}),
         "Unemployment": colourWithYears('unemployment','unemployed*100.0/employable',database,"Census data",numberToPercent, colourScales.turquoise),
         "Mayoral election 2016 result": colourFromMayor("<a href='http://data.london.gov.uk/elections'>London Elects</a>"),
         "Mayoral election 2016 percentage turnout": colourFromGenericPercent('voting', 'percent_turnout', "<a href='http://data.london.gov.uk/elections'>London Elects</a>",function(d){return d}, colourScales.purpleGreen),

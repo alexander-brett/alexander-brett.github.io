@@ -6,9 +6,10 @@ install:
   - sudo apt-get install ncftp
   - gem install github-pages
   - gem install html-proofer
+  - bundle update
 
 script:
-  - jekyll build
+  - bundle exec jekyll build
   - cd _site
   - htmlproofer .
 
@@ -21,4 +22,3 @@ env:
     - secure: "fuNP1mD6EUdOkdU7P3220uFs0ePWJABbwPEG96ddbkwHx1RA5w7w3F9J8mFa+GcctR31s0twRee3BOxxcUc8v9Mx8W8oF+PLy9h6YTkU/QlT2FfIuTfE1Iq6AJRpuDfgKkNLJZ2LgxC85SGfd+7irpNKNcfF7KhokOIKqV2MEOU="
     - secure: "ov3/RxtdJede/z0mPHZqXWHR+Vy7sBJNRtBOO76Pqztee3SU2MOo91806hVSkL2mzldvaYJFCd+tOqVeAf3ie6zEc3ZOeAyQHMKDP4627H44ujZZBwUosQ32c+At6uroivEjaZn1X5n0ZEUoqX0rBB1OVBCM29mlo/lvdX3vymI="
     - secure: "Jb/u8AK1QBO8RRygB46F/fh5j3dl94qP/V5ZzwRFXiejYLXIkiORdDZWUXOlQtY99JmW+f65cplMihWCMWoSr2dqStFy4g9ff+JOPS5FRlvH/ZQOJFAbDHDkQogNr/9rumRZOGFd9EY0dzeDCsEsP1RbB6jQ48EZdiYolzGQqu0="
-

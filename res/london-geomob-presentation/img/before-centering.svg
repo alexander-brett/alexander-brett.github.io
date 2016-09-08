@@ -1,0 +1,1262 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="bubbles-animated" width="600" height="600">
+<circle cx="320.9" cy="301.8" r="7.4" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="300.4" cy="323.4" r="7.0" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="269.7" cy="308.9" r="7.9" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="306.0" cy="298.4" r="7.7" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="327.7" cy="332.0" r="6.9" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="313.9" cy="328.3" r="7.3" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="271.5" cy="275.4" r="5.3" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="311.0" cy="313.3" r="7.6" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="283.8" cy="307.9" r="6.2" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="284.6" cy="283.3" r="7.6" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="299.3" cy="350.9" r="7.3" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="338.5" cy="323.2" r="7.0" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="286.2" cy="321.3" r="7.3" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="302.7" cy="337.0" r="6.8" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="291.3" cy="297.0" r="6.9" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="315.6" cy="342.9" r="7.2" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="311.6" cy="280.6" r="6.6" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="324.1" cy="318.9" r="6.5" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="299.0" cy="285.5" r="6.9" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="288.9" cy="340.1" r="7.3" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="281.6" cy="269.3" r="6.5" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="324.4" cy="285.9" r="7.2" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="321.7" cy="271.1" r="7.1" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="296.9" cy="309.9" r="6.9" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="340.8" cy="337.2" r="7.2" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="264.3" cy="331.0" r="7.7" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="306.7" cy="268.0" r="6.7" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="320.4" cy="357.0" r="7.6" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="307.4" cy="363.1" r="6.7" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="270.9" cy="287.3" r="6.5" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="334.2" cy="309.5" r="7.2" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="308.4" cy="242.6" r="6.8" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="333.4" cy="296.0" r="6.2" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="283.1" cy="354.1" r="7.8" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="293.4" cy="365.2" r="7.3" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="285.8" cy="233.6" r="6.6" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="291.1" cy="260.0" r="6.6" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="294.3" cy="272.9" r="6.5" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="315.2" cy="258.7" r="5.8" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="344.7" cy="289.4" r="6.8" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="329.0" cy="257.8" r="8.0" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="303.4" cy="255.1" r="6.5" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="268.0" cy="358.0" r="7.5" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="272.1" cy="343.8" r="7.2" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="329.5" cy="345.7" r="6.9" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="278.2" cy="332.0" r="6.0" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="273.4" cy="321.6" r="5.4" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="330.0" cy="242.0" r="6.7" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="302.8" cy="375.6" r="6.5" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="318.1" cy="370.9" r="6.5" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="260.1" cy="272.9" r="6.3" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="278.9" cy="251.8" r="7.1" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="336.9" cy="275.9" r="8.7" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="257.1" cy="344.9" r="7.8" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="319.0" cy="234.0" r="6.8" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="319.4" cy="248.2" r="5.5" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="350.3" cy="312.4" r="7.4" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="332.6" cy="364.7" r="6.8" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="258.3" cy="285.4" r="6.2" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="343.3" cy="262.3" r="6.3" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="247.6" cy="331.3" r="8.7" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="298.8" cy="233.4" r="6.4" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="354.4" cy="343.9" r="7.9" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="278.6" cy="297.0" r="5.8" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="263.7" cy="249.5" r="7.6" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="312.2" cy="211.7" r="5.5" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="341.1" cy="249.5" r="6.6" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="269.3" cy="263.1" r="7.1" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="341.9" cy="353.4" r="7.7" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="289.2" cy="379.4" r="7.4" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="332.0" cy="228.7" r="6.7" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="278.5" cy="368.8" r="7.5" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="292.6" cy="245.9" r="7.5" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="291.9" cy="221.6" r="6.8" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="272.2" cy="237.1" r="7.4" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="343.8" cy="301.4" r="5.3" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="262.7" cy="296.9" r="6.0" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="353.0" cy="327.9" r="8.1" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="304.9" cy="388.9" r="6.8" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="253.4" cy="359.5" r="7.1" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="308.2" cy="223.6" r="7.0" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="343.0" cy="236.3" r="6.6" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="258.3" cy="236.4" r="6.5" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="353.2" cy="277.6" r="7.7" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="356.5" cy="263.4" r="6.8" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="256.1" cy="261.0" r="6.2" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="288.4" cy="209.5" r="5.7" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="317.3" cy="383.8" r="6.4" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="263.8" cy="371.8" r="6.8" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="277.7" cy="222.1" r="7.3" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="367.9" cy="352.4" r="8.0" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="321.6" cy="220.1" r="6.8" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="272.9" cy="382.5" r="7.2" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="263.8" cy="224.4" r="6.7" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="355.6" cy="297.9" r="7.0" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="329.9" cy="378.5" r="7.2" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="255.4" cy="306.8" r="5.9" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="243.7" cy="265.6" r="6.7" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="323.5" cy="206.2" r="7.1" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="258.9" cy="384.7" r="6.9" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="310.8" cy="200.4" r="5.8" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="355.2" cy="249.3" r="7.3" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="334.6" cy="215.2" r="7.0" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="300.3" cy="211.4" r="6.3" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="356.3" cy="235.3" r="6.6" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="345.2" cy="371.1" r="7.2" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="259.7" cy="318.3" r="5.8" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="316.1" cy="397.2" r="6.9" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="250.0" cy="214.0" r="6.9" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="291.7" cy="393.9" r="7.2" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="365.7" cy="318.7" r="7.5" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="267.5" cy="198.0" r="6.9" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="345.8" cy="223.2" r="6.7" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="247.6" cy="278.3" r="6.6" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="335.3" cy="197.2" r="7.6" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="370.0" cy="260.8" r="6.9" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="366.7" cy="273.7" r="6.3" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="342.7" cy="385.6" r="7.4" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="361.9" cy="287.3" r="5.2" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="355.1" cy="360.5" r="7.2" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="297.6" cy="197.8" r="7.5" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="277.4" cy="396.3" r="7.2" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="263.3" cy="210.9" r="6.6" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="276.2" cy="208.4" r="6.4" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="250.8" cy="296.0" r="5.8" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="245.5" cy="239.5" r="6.6" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="367.9" cy="334.3" r="8.0" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="374.7" cy="285.4" r="7.7" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="254.3" cy="201.3" r="6.5" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="249.8" cy="373.4" r="7.2" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="242.6" cy="348.8" r="7.0" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="263.0" cy="398.3" r="7.2" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="329.9" cy="393.2" r="7.4" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="369.5" cy="303.7" r="7.9" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="291.8" cy="183.9" r="7.4" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="248.1" cy="316.6" r="5.9" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="234.8" cy="280.4" r="6.4" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="303.1" cy="403.5" r="7.5" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="246.5" cy="252.6" r="6.5" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="283.0" cy="196.8" r="7.0" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="249.3" cy="227.2" r="6.3" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="239.8" cy="205.8" r="6.2" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="238.3" cy="293.2" r="6.9" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="239.3" cy="362.8" r="7.3" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="231.4" cy="339.1" r="7.7" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="274.4" cy="186.2" r="6.6" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="227.4" cy="354.0" r="7.4" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="321.2" cy="191.8" r="7.4" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="225.5" cy="317.1" r="5.5" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="325.8" cy="406.7" r="6.6" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="367.9" cy="368.0" r="7.6" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="235.4" cy="230.8" r="6.6" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="244.9" cy="387.1" r="7.2" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="235.0" cy="376.6" r="7.1" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="382.9" cy="359.3" r="8.4" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="264.0" cy="177.7" r="6.7" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="234.1" cy="325.8" r="5.9" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="307.5" cy="187.2" r="6.9" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="340.2" cy="404.6" r="7.8" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="352.8" cy="396.3" r="7.2" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="231.1" cy="268.3" r="6.1" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="272.0" cy="409.7" r="7.1" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="257.7" cy="411.9" r="7.4" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="371.7" cy="244.0" r="10" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="222.8" cy="252.6" r="6.3" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="243.7" cy="193.6" r="6.4" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="317.9" cy="177.5" r="7.2" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="358.1" cy="215.9" r="7.5" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="243.5" cy="305.1" r="5.7" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="286.7" cy="408.0" r="7.6" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="236.6" cy="314.4" r="5.7" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="280.0" cy="173.5" r="7.3" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="356.5" cy="380.3" r="7.3" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="229.5" cy="303.9" r="6.9" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="298.4" cy="417.9" r="7.6" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="335.4" cy="181.7" r="7.8" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="313.6" cy="414.5" r="7.6" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="232.9" cy="243.9" r="6.7" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="257.8" cy="189.1" r="6.2" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="359.5" cy="201.2" r="7.2" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="237.6" cy="218.1" r="6.2" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="380.2" cy="343.3" r="7.2" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="389.8" cy="282.6" r="7.6" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="346.3" cy="207.1" r="7.1" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="222.8" cy="368.4" r="7.5" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="292.4" cy="165.7" r="7.3" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="382.8" cy="316.6" r="9.6" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="217.5" cy="343.7" r="6.9" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="219.6" cy="295.6" r="6.0" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="234.5" cy="256.6" r="6.0" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="304.3" cy="173.6" r="6.9" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="372.7" cy="213.7" r="7.1" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="247.2" cy="401.5" r="7.3" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="280.3" cy="421.8" r="7.5" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="217.5" cy="308.6" r="5.9" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="242.9" cy="414.0" r="5.8" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="333.4" cy="418.6" r="7.4" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="212.8" cy="286.0" r="5.7" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="380.2" cy="270.9" r="7.4" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="222.8" cy="227.3" r="6.4" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="266.8" cy="421.7" r="6.0" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="230.4" cy="390.8" r="7.7" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="268.5" cy="164.7" r="7.0" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="221.9" cy="277.5" r="6.7" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="213.0" cy="357.2" r="7.2" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="367.6" cy="227.2" r="7.2" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="197.6" cy="300.1" r="6.1" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="328.9" cy="168.0" r="7.2" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="222.4" cy="328.6" r="6.1" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="255.3" cy="167.8" r="6.4" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="383.2" cy="375.0" r="7.2" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="220.2" cy="240.0" r="6.5" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="391.3" cy="334.9" r="6.7" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="381.4" cy="229.9" r="6.7" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="249.1" cy="179.5" r="6.7" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="227.7" cy="288.8" r="4.5" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="323.3" cy="429.9" r="7.6" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="348.8" cy="191.9" r="6.9" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="385.1" cy="298.0" r="8.5" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="218.5" cy="264.7" r="6.5" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="274.8" cy="436.2" r="7.8" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="370.9" cy="382.5" r="7.2" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="291.9" cy="432.2" r="8.0" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="349.8" cy="177.9" r="7.0" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="261.3" cy="432.6" r="6.0" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="209.2" cy="249.2" r="7.7" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="213.1" cy="320.2" r="6.4" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="361.5" cy="186.0" r="7.0" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="210.5" cy="332.6" r="6.2" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="209.1" cy="233.1" r="6.6" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="209.7" cy="274.9" r="5.7" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="280.6" cy="157.4" r="7.0" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="217.5" cy="382.4" r="7.4" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="360.2" cy="409.2" r="7.4" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="252.0" cy="424.4" r="6.3" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="314.5" cy="162.6" r="8.0" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="372.1" cy="194.8" r="6.7" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="348.3" cy="418.3" r="7.4" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="394.8" cy="268.1" r="7.3" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="386.5" cy="217.0" r="7.0" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="233.9" cy="404.3" r="6.2" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="200.6" cy="324.3" r="6.6" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="209.2" cy="300.7" r="5.5" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="367.3" cy="396.5" r="7.1" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="382.4" cy="203.6" r="6.8" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="301.6" cy="154.2" r="7.3" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="319.4" cy="444.2" r="7.2" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="204.4" cy="291.8" r="4.5" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="207.6" cy="371.1" r="7.6" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="389.5" cy="242.1" r="7.9" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="198.3" cy="273.4" r="5.7" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="235.1" cy="182.3" r="7.6" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="396.0" cy="228.0" r="7.5" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="231.1" cy="416.3" r="6.0" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="205.4" cy="263.2" r="6.7" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="203.4" cy="311.4" r="6.6" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="374.7" cy="181.3" r="6.9" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="286.4" cy="447.6" r="8.3" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="199.7" cy="338.7" r="6.1" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="211.9" cy="220.3" r="6.4" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="307.8" cy="430.3" r="7.8" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="398.3" cy="322.9" r="7.0" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="363.8" cy="172.0" r="7.0" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="264.8" cy="151.0" r="7.1" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="314.3" cy="146.5" r="7.5" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="413.6" cy="299.3" r="7.6" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="328.4" cy="152.8" r="7.9" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="187.5" cy="276.7" r="5.5" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="400.1" cy="293.3" r="7.1" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="383.6" cy="256.5" r="7.2" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="203.4" cy="384.4" r="6.3" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="395.6" cy="368.1" r="6.9" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="250.2" cy="154.4" r="7.8" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="303.5" cy="446.4" r="8.7" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="239.3" cy="425.7" r="6.3" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="189.4" cy="344.6" r="5.1" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="188.3" cy="333.1" r="6.4" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="194.8" cy="253.9" r="7.3" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="217.7" cy="395.7" r="5.8" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="187.4" cy="296.3" r="4.6" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="393.3" cy="385.3" r="7.2" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="187.4" cy="307.3" r="6.3" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="229.5" cy="196.5" r="7.6" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="342.5" cy="166.7" r="6.3" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="199.3" cy="352.2" r="7.3" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="289.5" cy="146.7" r="6.8" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="409.4" cy="331.7" r="7.0" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="221.9" cy="406.9" r="6.0" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="193.5" cy="365.7" r="7.4" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="194.1" cy="287.0" r="6.7" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="393.2" cy="348.2" r="6.6" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="344.0" cy="152.8" r="7.5" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="399.3" cy="254.0" r="7.4" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="190.9" cy="265.6" r="4.9" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="224.2" cy="211.8" r="8.5" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="337.9" cy="432.5" r="7.1" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="397.9" cy="308.1" r="7.7" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="269.8" cy="449.2" r="6.0" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="404.5" cy="279.3" r="7.4" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="197.7" cy="240.2" r="6.7" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="381.6" cy="393.9" r="7.3" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="361.0" cy="422.5" r="5.8" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="188.1" cy="320.1" r="6.5" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="190.1" cy="380.4" r="7.6" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="285.1" cy="463.7" r="7.8" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="312.7" cy="132.1" r="6.9" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="276.2" cy="142.3" r="7.1" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="354.5" cy="162.1" r="6.4" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="248.5" cy="436.8" r="6.5" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="197.2" cy="225.6" r="7.4" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="227.1" cy="427.6" r="5.9" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="384.6" cy="190.5" r="6.4" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="255.3" cy="139.5" r="7.7" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="376.8" cy="168.0" r="6.4" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="240.9" cy="167.3" r="8.0" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="395.5" cy="204.3" r="6.3" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="211.5" cy="199.3" r="9.3" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="326.3" cy="137.9" r="7.0" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="375.6" cy="409.2" r="8.0" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="225.4" cy="170.3" r="7.7" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="300.4" cy="462.4" r="7.4" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="352.2" cy="432.5" r="7.2" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="219.5" cy="418.5" r="5.8" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="403.6" cy="215.3" r="7.3" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="301.4" cy="140.0" r="6.7" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="409.4" cy="265.1" r="7.4" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="220.0" cy="184.6" r="7.6" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="412.8" cy="315.9" r="9.0" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="178.4" cy="269.4" r="6.1" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="404.3" cy="240.4" r="6.9" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="179.7" cy="286.4" r="6.8" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="206.2" cy="396.0" r="5.6" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="387.7" cy="178.0" r="6.4" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="243.7" cy="448.4" r="6.0" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="428.4" cy="295.0" r="7.7" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="210.1" cy="406.7" r="5.7" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="176.9" cy="314.1" r="6.1" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="182.6" cy="355.0" r="7.2" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="335.4" cy="446.2" r="6.8" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="235.5" cy="438.1" r="6.5" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="419.1" cy="282.9" r="7.4" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="183.7" cy="242.0" r="7.4" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="178.8" cy="341.2" r="6.0" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="215.2" cy="429.5" r="6.0" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="258.6" cy="444.5" r="6.1" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="357.5" cy="149.7" r="6.2" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="180.5" cy="256.2" r="7.1" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="406.2" cy="345.1" r="6.6" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="405.9" cy="381.5" r="5.9" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="176.3" cy="299.9" r="7.0" style="fill: rgb(219, 219, 141);">
+</circle>
+<circle cx="366.9" cy="159.0" r="6.2" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="324.1" cy="123.8" r="7.1" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="342.0" cy="137.7" r="7.6" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="195.0" cy="392.6" r="5.5" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="271.4" cy="461.3" r="6.1" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="230.3" cy="155.7" r="7.6" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="413.7" cy="251.1" r="7.2" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="260.2" cy="456.5" r="6.0" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="400.7" cy="178.2" r="6.5" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="286.8" cy="133.2" r="6.8" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="318.0" cy="461.7" r="6.5" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="248.5" cy="459.4" r="5.9" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="424.6" cy="328.8" r="8.3" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="405.2" cy="358.5" r="6.7" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="207.9" cy="418.0" r="5.7" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="366.8" cy="434.6" r="7.4" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="411.9" cy="227.9" r="7.6" style="fill: rgb(199, 199, 199);">
+</circle>
+<circle cx="299.5" cy="126.2" r="7.2" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="293.4" cy="476.4" r="7.3" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="389.1" cy="165.6" r="6.0" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="203.8" cy="183.5" r="8.1" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="201.5" cy="212.0" r="6.8" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="178.8" cy="369.6" r="7.8" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="267.6" cy="131.1" r="7.0" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="182.5" cy="227.2" r="7.3" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="239.4" cy="143.5" r="7.5" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="177.1" cy="326.9" r="6.3" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="166.6" cy="262.0" r="7.7" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="223.0" cy="438.9" r="6.0" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="241.1" cy="128.3" r="7.6" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="411.9" cy="370.2" r="6.8" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="372.4" cy="148.0" r="6.0" style="fill: rgb(188, 189, 34);">
+</circle>
+<circle cx="351.9" cy="453.2" r="6.3" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="408.4" cy="201.6" r="6.7" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="390.5" cy="405.5" r="7.2" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="397.8" cy="191.3" r="6.8" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="197.9" cy="403.9" r="5.8" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="338.8" cy="122.8" r="7.4" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="419.6" cy="343.2" r="6.8" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="306.6" cy="481.4" r="6.7" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="308.5" cy="115.2" r="6.9" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="193.0" cy="199.6" r="8.1" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="167.0" cy="278.1" r="8.2" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="211.0" cy="441.0" r="6.1" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="428.4" cy="254.7" r="7.9" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="164.3" cy="293.0" r="6.8" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="231.5" cy="450.2" r="6.3" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="429.1" cy="310.8" r="7.9" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="203.5" cy="428.5" r="5.6" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="168.7" cy="348.0" r="6.1" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="417.8" cy="211.9" r="7.2" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="401.5" cy="165.3" r="6.3" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="423.5" cy="269.0" r="7.1" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="253.1" cy="470.4" r="5.9" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="422.7" cy="239.0" r="7.8" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="165.6" cy="321.4" r="6.3" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="236.8" cy="461.2" r="5.8" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="421.3" cy="197.8" r="6.7" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="196.5" cy="415.6" r="5.9" style="fill: rgb(23, 190, 207);">
+</circle>
+<circle cx="351.8" cy="466.0" r="6.2" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="219.0" cy="450.4" r="6.1" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="282.7" cy="486.5" r="7.3" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="433.6" cy="279.6" r="7.4" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="331.2" cy="110.3" r="7.1" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="404.0" cy="395.1" r="7.2" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="152.7" cy="284.7" r="7.4" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="390.4" cy="421.0" r="7.4" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="168.9" cy="246.6" r="7.8" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="187.8" cy="213.9" r="6.9" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="168.7" cy="360.2" r="6.0" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="351.8" cy="115.1" r="7.6" style="fill: rgb(31, 119, 180);">
+</circle>
+<circle cx="185.9" cy="183.1" r="9.7" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="209.4" cy="168.0" r="8.4" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="262.8" cy="482.1" r="7.0" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="225.6" cy="465.0" r="5.9" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="167.8" cy="335.5" r="6.3" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="411.0" cy="188.3" r="6.7" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="164.1" cy="307.7" r="7.4" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="439.3" cy="322.6" r="7.6" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="225.8" cy="130.2" r="7.5" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="215.2" cy="152.9" r="7.7" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="193.1" cy="434.6" r="6.4" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="418.0" cy="358.8" r="6.0" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="432.5" cy="340.9" r="6.1" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="426.8" cy="223.9" r="7.7" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="177.1" cy="205.0" r="6.9" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="199.5" cy="445.4" r="6.1" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="428.6" cy="352.7" r="6.1" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="437.0" cy="266.1" r="6.3" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="211.0" cy="459.5" r="6.0" style="fill: rgb(255, 127, 14);">
+</circle>
+<circle cx="444.5" cy="291.5" r="8.7" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="186.0" cy="405.3" r="6.0" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="273.7" cy="505.5" r="6.6" style="fill: rgb(247, 182, 210);">
+</circle>
+<circle cx="423.1" cy="376.5" r="6.0" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="437.0" cy="242.6" r="6.9" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="435.5" cy="196.5" r="7.4" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="156.4" cy="330.1" r="6.3" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="176.7" cy="383.4" r="6.0" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="185.0" cy="416.9" r="5.6" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="167.2" cy="230.5" r="8.2" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="182.4" cy="393.9" r="5.8" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="442.7" cy="254.7" r="6.3" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="183.2" cy="165.3" r="8.2" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="421.7" cy="180.2" r="6.6" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="166.5" cy="214.8" r="7.4" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="182.8" cy="428.1" r="5.7" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="157.5" cy="342.6" r="6.1" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="448.7" cy="275.0" r="8.2" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="444.2" cy="307.7" r="7.4" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="428.2" cy="365.4" r="6.1" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="153.7" cy="269.9" r="7.3" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="170.8" cy="191.8" r="7.7" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="411.5" cy="414.4" r="6.9" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="197.1" cy="157.2" r="7.9" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="152.1" cy="299.6" r="6.9" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="440.3" cy="229.3" r="6.7" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="153.2" cy="255.1" r="7.3" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="404.7" cy="441.1" r="7.1" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="436.1" cy="211.6" r="7.6" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="443.7" cy="335.7" r="6.2" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="154.9" cy="240.3" r="7.4" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="440.2" cy="362.5" r="6.1" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="151.7" cy="315.9" r="7.4" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="440.6" cy="350.2" r="6.1" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="453.1" cy="261.4" r="6.0" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="170.7" cy="177.6" r="6.4" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="146.4" cy="347.8" r="6.1" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="450.6" cy="244.2" r="6.6" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="422.6" cy="396.6" r="7.6" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="152.3" cy="225.7" r="7.3" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="140.4" cy="276.4" r="7.4" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="453.3" cy="323.1" r="6.2" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="457.9" cy="299.1" r="6.5" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="166.4" cy="391.1" r="6.8" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="174.0" cy="420.0" r="5.8" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="167.2" cy="163.7" r="7.8" style="fill: rgb(174, 199, 232);">
+</circle>
+<circle cx="140.6" cy="292.1" r="6.8" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="173.4" cy="401.9" r="6.0" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="366.8" cy="505.7" r="5.9" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="167.0" cy="376.4" r="5.8" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="161.3" cy="202.0" r="6.2" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="140.4" cy="307.0" r="6.8" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="152.8" cy="211.7" r="6.5" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="396.4" cy="475.9" r="4.3" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="141.4" cy="246.4" r="7.2" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="449.3" cy="218.6" r="7.1" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="438.5" cy="381.6" r="6.2" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="143.2" cy="327.7" r="7.0" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="435.1" cy="182.2" r="6.8" style="fill: rgb(255, 187, 120);">
+</circle>
+<circle cx="158.0" cy="365.9" r="6.0" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="463.2" cy="273.8" r="6.2" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="156.7" cy="189.7" r="6.5" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="166.2" cy="411.3" r="5.8" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="422.3" cy="429.5" r="7.3" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="455.9" cy="335.1" r="6.0" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="461.5" cy="250.4" r="5.8" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="452.8" cy="231.8" r="5.9" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="452.5" cy="347.0" r="6.2" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="128.5" cy="285.0" r="7.1" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="140.0" cy="261.7" r="7.2" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="155.9" cy="399.3" r="6.4" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="441.6" cy="412.9" r="7.3" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="153.9" cy="176.6" r="6.8" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="139.9" cy="232.4" r="6.7" style="fill: rgb(158, 218, 229);">
+</circle>
+<circle cx="147.4" cy="360.0" r="6.0" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="171.5" cy="431.6" r="6.1" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="459.8" cy="312.1" r="6.5" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="430.4" cy="454.0" r="7.1" style="fill: rgb(127, 127, 127);">
+</circle>
+<circle cx="154.3" cy="411.8" r="6.1" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="155.1" cy="385.0" r="6.0" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="448.3" cy="205.4" r="5.9" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="161.0" cy="422.2" r="6.1" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="461.7" cy="223.6" r="6.2" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="462.9" cy="238.4" r="6.1" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="452.3" cy="362.1" r="6.0" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="148.5" cy="199.6" r="6.2" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="128.6" cy="299.4" r="7.2" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="465.5" cy="324.5" r="6.0" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="144.0" cy="187.8" r="6.3" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="465.2" cy="261.7" r="6.0" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="458.8" cy="286.0" r="6.6" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="134.5" cy="353.1" r="6.3" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="136.8" cy="339.6" r="6.4" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="132.9" cy="318.4" r="6.7" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="127.6" cy="269.7" r="7.0" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="153.8" cy="431.4" r="5.5" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="128.3" cy="240.3" r="7.1" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="464.4" cy="343.7" r="6.0" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="142.0" cy="379.2" r="6.0" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="140.4" cy="218.0" r="6.7" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="138.4" cy="367.9" r="5.8" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="473.8" cy="253.1" r="6.1" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="161.0" cy="450.0" r="6.0" style="fill: rgb(197, 176, 213);">
+</circle>
+<circle cx="145.6" cy="166.4" r="6.3" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="472.9" cy="314.0" r="6.7" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="135.5" cy="199.7" r="6.7" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="128.8" cy="224.8" r="6.6" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="127.5" cy="254.5" r="7.1" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="472.8" cy="334.4" r="6.2" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="474.9" cy="240.9" r="6.0" style="fill: rgb(255, 152, 150);">
+</circle>
+<circle cx="124.7" cy="343.8" r="6.3" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="124.1" cy="193.2" r="6.3" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="460.7" cy="208.2" r="6.7" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="474.8" cy="218.8" r="7.7" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="127.1" cy="363.9" r="6.0" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="127.2" cy="375.9" r="5.9" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="123.9" cy="329.6" r="7.5" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="119.4" cy="354.8" r="5.8" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="476.8" cy="270.1" r="7.7" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="132.1" cy="183.3" r="6.3" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="129.2" cy="211.2" r="6.3" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="114.9" cy="288.7" r="6.9" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="113.7" cy="260.0" r="7.8" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="114.6" cy="302.8" r="7.1" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="477.3" cy="348.5" r="6.4" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="118.5" cy="217.4" r="6.0" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="464.7" cy="185.2" r="6.7" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="116.0" cy="246.0" r="6.4" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="119.5" cy="315.7" r="6.6" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="113.5" cy="274.8" r="6.9" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="117.2" cy="232.0" r="6.7" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="485.4" cy="328.6" r="6.4" style="fill: rgb(148, 103, 189);">
+</circle>
+<circle cx="102.4" cy="247.3" r="7.2" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="112.1" cy="338.6" r="7.2" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="107.8" cy="351.8" r="6.0" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="490.5" cy="220.9" r="8.0" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="476.1" cy="204.3" r="6.6" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="118.9" cy="204.4" r="6.0" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="100.4" cy="290.1" r="7.5" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="486.1" cy="256.8" r="6.6" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="492.5" cy="285.8" r="6.7" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="121.8" cy="394.5" r="5.9" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="109.2" cy="324.1" r="6.6" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="98.9" cy="333.5" r="6.8" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="107.6" cy="223.2" r="6.2" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="115.5" cy="377.8" r="5.7" style="fill: rgb(44, 160, 44);">
+</circle>
+<circle cx="486.4" cy="235.1" r="6.7" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="100.4" cy="304.9" r="7.2" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="117.2" cy="182.8" r="6.1" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="99.6" cy="275.5" r="6.9" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="98.7" cy="261.3" r="7.2" style="fill: rgb(214, 39, 40);">
+</circle>
+<circle cx="110.3" cy="364.7" r="6.5" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="97.3" cy="318.4" r="6.6" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="108.4" cy="210.7" r="6.0" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="109.2" cy="197.4" r="5.9" style="fill: rgb(140, 86, 75);">
+</circle>
+<circle cx="93.5" cy="236.6" r="6.6" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="495.3" cy="246.5" r="6.5" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="494.8" cy="206.7" r="6.7" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="499.7" cy="232.7" r="6.8" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="87.1" cy="326.9" r="6.6" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="94.9" cy="223.4" r="6.4" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="86.3" cy="279.9" r="6.9" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="487.0" cy="192.0" r="6.7" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="93.9" cy="362.1" r="6.4" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="93.1" cy="345.5" r="6.4" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="86.3" cy="294.2" r="7.1" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="512.6" cy="223.7" r="6.4" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="93.5" cy="210.4" r="6.5" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="83.1" cy="228.6" r="6.3" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="506.6" cy="178.4" r="7.3" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="514.4" cy="201.9" r="6.9" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="80.1" cy="372.0" r="7.3" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="93.5" cy="194.8" r="6.4" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="81.5" cy="267.1" r="6.7" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="78.1" cy="306.2" r="7.3" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="73.6" cy="287.0" r="7.4" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="522.8" cy="252.6" r="6.6" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="78.4" cy="353.2" r="6.6" style="fill: rgb(152, 223, 138);">
+</circle>
+<circle cx="76.5" cy="217.7" r="6.3" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="77.7" cy="182.1" r="6.1" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="73.6" cy="254.3" r="6.8" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="534.8" cy="214.3" r="6.5" style="fill: rgb(196, 156, 148);">
+</circle>
+<circle cx="63.9" cy="325.9" r="6.7" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="65.5" cy="235.0" r="6.0" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="62.4" cy="266.7" r="7.1" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="55.2" cy="282.2" r="6.8" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="50.8" cy="298.9" r="7.2" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="53.2" cy="251.6" r="6.9" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="40.8" cy="263.8" r="7.1" style="fill: rgb(227, 119, 194);">
+</circle>
+<circle cx="46.6" cy="192.6" r="5.1" style="fill: rgb(227, 119, 194);">
+</circle>
+</svg>

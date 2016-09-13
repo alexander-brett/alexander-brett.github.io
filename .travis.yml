@@ -11,6 +11,7 @@ install:
 script:
   - bundle exec jekyll build
   - cd _site
+  - htmlproofer . --file-ignore ./london-geomob-presentation.html
 
 after_success:
   - if [ "$TRAVIS_BRANCH" == "published" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ncftpput -u $USER -p $PASS -R $SITE /public_html/ ./; fi

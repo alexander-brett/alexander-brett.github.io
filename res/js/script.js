@@ -5,6 +5,7 @@ function highlightLinks(){
 }
 
 function setupHeaderScrolling(){
+  $('header').animate({top: '0'},300);
   $('#blog').scroll(function(e){
     var header = $('header');
     var body = $('#blog');

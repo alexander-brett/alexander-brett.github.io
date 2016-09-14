@@ -6,9 +6,9 @@ function highlightLinks(){
 
 function setupHeaderScrolling(){
   $('header').animate({top: '0'},300);
-  $('#blog').scroll(function(e){
+  $('#content>*').scroll(function(e){
     var header = $('header');
-    var body = $('#blog');
+    var body = $('#content>*');
     var offset = body.scrollTop();
     var top = Math.min(offset, $('header h1').outerHeight(true));
     header.css('top', -top);
@@ -32,14 +32,16 @@ function navigateToLink(href, callback){
     $.ajax(href).done(function(data){
         var newDiv;
       	if (href.match(/.png|.jpg|.webm|.jpeg/)) {
-      	    newDiv =  $(
-      		'<div><a class="back internal" href="'
-      		    + window.location.pathname + '">&#9664;</a></div>'
+	    newDiv = $([
+		$('<div id="headerpadding"></div><a class="back internal" href="'
+      		  + window.location.pathname + '">&#9664;</a>'),
+		$(
+      		'<div></div>'
       	    ).addClass(
       		'gallery-expanded'
       	    ).css({
       		"background-image": "url("+href+")"
-      	    })
+      	    })]).map(function(){return this.toArray()});
       	} else {
       	    newDiv = $(data).filter(
       		function(i,e){return e.id=="content"}

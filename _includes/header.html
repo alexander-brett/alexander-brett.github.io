@@ -1,13 +1,32 @@
 <html>
-  <head>
+  <head>    
     <title>
       Alexander Brett
-      {% if page.title %}
-      &nbsp;|&nbsp;{{page.title}}
-      {% elsif page.currentTag %}
-      &nbsp;|&nbsp;{{page.currentTag}}
+      {% if page.title %}&nbsp;|&nbsp;{{page.title}}
+      {% elsif page.currentTag %}&nbsp;|&nbsp;{{page.currentTag}}
+      {% elsif gallery.title %}&nbsp;|&nbsp;{{gallery.title}}
       {% endif %}
     </title>
+    {% if gallery %}
+    <meta name="twitter:card" content="summary_large_photo"/>
+    <meta name="twitter:image" content="http://alexander-brett.co.uk/res/img/{{ key }}/{{ gallery.photos[0] }}"
+    {% else %}
+    <meta name="twitter:card" content="summary"/>
+    {% endif %}
+    <meta name="twitter:site" conten="@alex_brett_uk"/>
+    <meta name="twitter:title" content="
+      Alexander Brett
+      {% if page.title %}&nbsp;|&nbsp;{{page.title}}
+      {% elsif page.currentTag %}&nbsp;|&nbsp;{{page.currentTag}}
+      {% elsif gallery.title %}&nbsp;|&nbsp;{{gallery.title}}
+      {% endif %}
+    "/>
+    <meta name="twitter:description" content="
+      {% if post.excerpt %}{{ post.excerpt }}
+      {% elsif page.description %} {{page.description}}
+      {% elsif gallery %}Photo gallery
+      {% endif %}
+    "/>
     <meta name="author" content="Alexander Brett">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">

@@ -14,8 +14,7 @@
     <meta name="twitter:card" content="summary"/>
     {% endif %}
     <meta name="twitter:site" conten="@alex_brett_uk"/>
-    <meta name="twitter:title" content="
-      Alexander Brett
+    <meta name="twitter:title" content="Alexander Brett
       {% if page.title %}&nbsp;|&nbsp;{{page.title}}
       {% elsif page.currentTag %}&nbsp;|&nbsp;{{page.currentTag}}
       {% elsif gallery.title %}&nbsp;|&nbsp;{{gallery.title}}
@@ -25,6 +24,7 @@
       {% if post.excerpt %}{{ post.excerpt }}
       {% elsif page.description %} {{page.description}}
       {% elsif gallery %}Photo gallery
+      {% else %}Alex's personal website
       {% endif %}
     "/>
     <meta name="author" content="Alexander Brett">

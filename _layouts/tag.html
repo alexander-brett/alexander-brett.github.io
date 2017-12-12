@@ -3,7 +3,7 @@
 
 {% include header.html %}
 
-{% assign tag = (page.path | replace: "/index.html", "" | split: "/" | last) %}
+{% assign tag = page.path | replace: "/index.html", "" | split: "/" | last %}
 
   <div id="blog">
     <div id="headerPadding"> </div>

@@ -4,7 +4,7 @@ highlighter: rouge
 kramdown:
   input: GFM
   hard_wrap: false
-gems:
+plugins:
   - jekyll-coffeescript
   - jekyll-paginate
 

@@ -3,7 +3,6 @@ language: ruby
 rvm: [2.3]
 
 install:
-  - sudo update-ca-certificates
   - sudo apt-get install ncftp
   - gem install github-pages
   - gem install html-proofer
@@ -12,7 +11,7 @@ install:
 script:
   - bundle exec jekyll build
   - cd _site
-  - htmlproofer . --file-ignore ./london-geomob-presentation.html
+  - htmlproofer . --file-ignore ./london-geomob-presentation.html --disable_external
 
 after_success:
   - if [ "$TRAVIS_BRANCH" == "published" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ncftpput -u $USER -p $PASS -R $SITE /public_html/ ./; fi

@@ -329,7 +329,7 @@ public class TriggerOperationManager {
 
 This demonstrates the power of using object-oriented patterns well. By using inheritance and by having a single shared dispatcher class, we can achieve powerful org-wide changes with only a couple of dozen lines of code.
 
-###Logging
+### Logging
 
 It's obviously good to know what you've done in a transaction. What if we modified these classes to help us do that, even when we've burnt waaaaaaaay past the 2MB logging limit?
 

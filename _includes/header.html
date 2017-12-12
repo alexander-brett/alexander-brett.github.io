@@ -1,24 +1,44 @@
 <html>
-  <head>
+  <head>    
     <title>
       Alexander Brett
-      {% if page.title %}
-      &nbsp;|&nbsp;{{page.title}}
-      {% elsif page.currentTag %}
-      &nbsp;|&nbsp;{{page.currentTag}}
+      {% if page.title %}&nbsp;|&nbsp;{{page.title}}
+      {% elsif page.currentTag %}&nbsp;|&nbsp;{{page.currentTag}}
+      {% elsif gallery.title %}&nbsp;|&nbsp;{{gallery.title}}
       {% endif %}
     </title>
+    {% if gallery %}
+    <meta name="twitter:card" content="summary_large_photo"/>
+    <meta name="twitter:image" content="http://alexander-brett.co.uk/res/img/{{ key }}/{{ gallery.photos[0] }}"
+    {% else %}
+	  <meta name="twitter:card" content="summary"/>
+	  <meta name="twitter:image" content="http://alexander-brett.co.uk/large_icon.PNG"/>
+    {% endif %}
+    <meta name="twitter:site" conten="@alex_brett_uk"/>
+    <meta name="twitter:title" content="Alexander Brett
+      {% if page.title %}&nbsp;|&nbsp;{{page.title}}
+      {% elsif page.currentTag %}&nbsp;|&nbsp;{{page.currentTag}}
+      {% elsif gallery.title %}&nbsp;|&nbsp;{{gallery.title}}
+      {% endif %}
+    "/>
+    <meta name="twitter:description" content="
+      {% if post.excerpt %}{{ post.excerpt }}
+      {% elsif page.description %} {{page.description}}
+      {% elsif gallery %}Photo gallery
+      {% else %}Alex's personal website
+      {% endif %}
+    "/>
     <meta name="author" content="Alexander Brett">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="alternate" type="application/rss+xml"
 	  title="Alexander Brett's Code RSS" href="/index.rss">
-    
-    <link rel="stylesheet" href="/styles/style.css"/>
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/res/styles/style.css"/>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   </head>
-  
+
   <body class="light">
     <header>
       <a href="/" class="home">
@@ -36,5 +56,5 @@
         </li>
       </ul>
     </header>
-    
+
     <div id="content">

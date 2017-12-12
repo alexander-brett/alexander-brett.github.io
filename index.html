@@ -4,6 +4,8 @@
 {% include header.html %}
 
 <div id="blog">
+
+    <div id="headerPadding"> </div>
   {% for post in paginator.posts %}
     <div class="blog-post expanded">
       <span class="expander">&#9654;</span>
@@ -11,7 +13,7 @@
       {% include postBody.html post=post %}
     </div>
   {% endfor %}
-  
+
   <!-- Pagination links -->
   <div class="pagination">
     {% for number in (2..paginator.total_pages) reversed %}

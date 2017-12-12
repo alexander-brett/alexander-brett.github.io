@@ -1,13 +1,16 @@
 ---
+title: Photos
+description: Selected personal and professional photography projects
 ---
 
 {% include header.html %}
 
   <div id="photo" class="gallery">
+    <div id="headerPadding"> </div>
     <div class="tiles">
       {% for gallery in site.galleries %}
         <div class="photo-container"
-	  style="background-image: url('/img/{{ gallery[0] }}/{{ gallery[1].photos[0] }}')">
+	  style="background-image: url('/res/img/{{ gallery[0] }}/{{ gallery[1].photos[0] }}')">
           <a  class="internal" href="/galleries/{{ gallery[0] }}/"></a>
         </div>
       {% endfor %}

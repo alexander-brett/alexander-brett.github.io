@@ -33,7 +33,7 @@ I created a branch called, `addGitattributes`. This contained only one change - 
 
 Then, I created a batch script called for instance, `doMassChange.bat`. It looked like this, although yours will vary depending on what you were trying to achieve.
 
-```bat
+```shell
 git reset --hard && ^
 git clean -f && ^
 git merge origin/addGitattributes && ^
@@ -48,7 +48,7 @@ git commit -m "Profile compression commit"
 
 As you can see, I've chained each command with `&&` which ensures that if one thing breaks, we stop and the developer has a chance to call me over so I can work out what! Lastly, I created a file called `applyMassChangeCleanly.bat` (these names are actually fictional to make it clear what I mean, to be honest) which looked like this:
 
-```bat
+```shell
 git reset --hard && ^
 git clean -f && ^
 git merge MASS_CHANGE_DEVELOP_BEFORE && ^

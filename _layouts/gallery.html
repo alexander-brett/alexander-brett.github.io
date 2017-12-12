@@ -1,4 +1,4 @@
-{% assign key = (page.path | replace: "/index.html","" | split:"/" | last )  %}
+{% assign key = page.path | replace: "/index.html","" | split:"/" | last   %}
 {% assign gallery = site.galleries[key] %}
 {% include header.html %}
   <div id="gallery" class="gallery">

@@ -1,6 +1,6 @@
 ---
 title: Tools for effective branching structures in git
-tags: git
+tags: [Git]
 ---
 
 Creating a good git branching structure is a difficult process. There are many considerations to be juggled, including: 

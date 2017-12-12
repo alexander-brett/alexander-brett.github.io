@@ -3,6 +3,7 @@ language: ruby
 rvm: [2.3]
 
 install:
+  - sudo update-ca-certificates
   - sudo apt-get install ncftp
   - gem install github-pages
   - gem install html-proofer
